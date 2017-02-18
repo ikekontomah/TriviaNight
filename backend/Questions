@@ -1,5 +1,5 @@
 Rwanda (+250)
-1.Government
+1.Government 
 Easy:Who is the President of Rwanda ?Paul Kagame
 Medium:Who is the Minister of education of Rwanda? Silas Lwakabamba
 Hard:Who was the president of Rwanda in 1994 ? Juvénal Habyarimana
@@ -8,7 +8,7 @@ Easy:What is the currency of Rwanda ? Rwandan Franc
 Medium:What is the main cash crop of Rwanda ? Tea
 Hard:What is the GDP per capita of Rwanda ? 638.67 US dollars(2013)
 3.Sports
-Easy:What is the name of the Rwandan soccer team ? Amavubi(The wasps), sdfas, dafsdf, asdfasd
+Easy:What is the name of the Rwandan soccer team ? Amavubi(The wasps)
 Medium:What is the FIFA ranking of the Rwandan national soccer team ? 93rd
 Hard:When is the Rwanda's first appearance at the Olympic games ? 1984
 4.Entertainment:
@@ -42,4 +42,7 @@ Hard:Who composed the DR Congo National anthem ? Joseph Lutumba
 Easy:How many languages are spoken in DR Congo? 242
 Medium:Which ethnic group are the earliest inhabitants of Congo ? Pygmies
 Hard:What is the DR Congo dialect of Swahili called ?Kingwana
+<<<<<<< HEAD
 Hard:What is the name of the Rwandan national anthem ? Rwanda Nziza
+=======
+>>>>>>> added datagen.py
