@@ -102,7 +102,8 @@ function selectRandomCountry(region){
 
 function selectRandomRegion(){
 	/*
-	INPUT: no input. This function
+	INPUT: no input. This function returns a random region in case the user does not want to choose
+	OUTPUT: region, output can be used in the JSON info
 	*/
 	var from = Object.keys(info); //returns the country region in the JSON file info
 	var value = -1;
