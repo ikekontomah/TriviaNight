@@ -83,18 +83,21 @@ const topics = {
 	5: "culture"
 };
 
-//precondition:Take in a region in Africa
-//postcondition:Produce a random country from the region and display to the screen
+
 function selectRandomCountry(region){
-	var from = Object.keys(info[region]);
+	/*
+	INPUT: Take in a region in Africa
+	OUTPUT: return a random country from the region
+	*/
+	var from = Object.keys(info[region]); //array of country code from the specific region
 	var value = -1;
 	while (value < 0 || value >= from.length){
-		value = Math.round(Math.random()*from.length);
+		value = Math.round(Math.random()*from.length); //picks a random index in from array
 	}
-	code = from[value];
+	code = from[value]; //the code that matches the index randomly generated
 	var country = info[region][code];
 	// country is the random country to display to user, code is the code to send to server
-	return [code, country];
+	return [code, country]; 
 }
 
 function selectRandomRegion(){
