@@ -13,9 +13,36 @@ Medium:What is the FIFA ranking of the Rwandan national soccer team ? 93rd
 Hard:When is the Rwanda's first appearance at the Olympic games ? 1984
 4.Entertainment:
 Easy:Who sang baramushaka ? knowless
-Medium:
-Hard:Who won two kora awards in 2003 for "Most Inspiring" and "Best Traditional Artist" ? Jean-Paul Samputu
+Medium:Who won two kora awards in 2003 for "Most Inspiring" and "Best Traditional Artist" ? Jean-Paul Samputu
+Hard:What is the name of the Rwandan national anthem ? Rwanda Nziza
 5.Culture:
 Easy:Name the main traditional Rwandan dance ?Itorero
 Medium:What is the most modern music genre in Rwanda ? Afrobeat
+Hard:What are the two main tribes of Rwanda ? Tutsis and Hutus
+
+DR. Congo(+243)
+1.Government 
+Easy:Who was the first President of DR Congo?Joseph Kasavubu
+Medium:Who is the Chief Justice of DR Congo? 26
+Medium : In which year did DR Congo gain independence ? 1960
+Hard:Since when has Joseph KAbila been the President of DR.Congo? 2001
+2.Economics
+Easy:What is the currency of DR Congo? Congolese Franc
+Medium:What mineral is produced in large quantities by DR Congo? cobalt ore
+Hard:What is the GDP per capita of DR congo ? 784 US dollars(2013)
+3.Sports
+Easy:What was teh DR Congo national team known for at the just ended 2017 AFCON ? Fimbu
+Medium:In what years did TP Mazembe win the CAF Champions league back to back ? 2009 and 2010
+Hard:What team does Tresor Mputu Mabi play for currently ? Kabuscorp SCP
+4.Entertainment
+Easy:Who sang Nzinzi ? Emenaya
+Medium:What is the popular name for Congolese music ? Soukous
+Hard:Who composed the DR Congo National anthem ? Joseph Lutumba
+5.Culture:
+Easy:How many languages are spoken in DR Congo? 242
+Medium:Which ethnic group are the earliest inhabitants of Congo ? Pygmies
+Hard:What is the DR Congo dialect of Swahili called ?Kingwana
+<<<<<<< HEAD
 Hard:What is the name of the Rwandan national anthem ? Rwanda Nziza
+=======
+>>>>>>> added datagen.py

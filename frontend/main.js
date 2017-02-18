@@ -1,6 +1,7 @@
 const info = {
 	/*
-	info is the information on the front end. We have it based on regions in africa (south, east, north, west, and central) and on country code (these same country codes will be used in the backend). Each code is unique to the country.
+	info is the information on the front end. We have it based on regions in africa (south, east, north, west, and central)
+	 and on country code (these same country codes will be used in the backend). Each code is unique to the country.
 	*/
 	south: {
 		267:"Botswana",

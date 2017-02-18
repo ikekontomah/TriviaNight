@@ -1,0 +1,10 @@
+//this folder includes the topics to be used for the quiz
+{
+	"code": {
+	"1": "Government",
+	"2": "Economics",
+	"3": "Sports",
+	"4": "Entertainment",
+	"5": "Culture"
+}
+}
