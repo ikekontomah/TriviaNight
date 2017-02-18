@@ -83,6 +83,8 @@ const topics = {
 	5: "culture"
 };
 
+//precondition:Take in a region in Africa
+//postcondition:Produce a random country from the region and display to the screen
 function selectRandomCountry(region){
 	var from = Object.keys(info[region]);
 	var value = -1;
