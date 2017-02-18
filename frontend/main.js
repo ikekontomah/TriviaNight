@@ -71,7 +71,8 @@ const info = {
  		239: "São Tomé and Príncipe"
 	}
 }
-
+//precondition:Take in a region in Africa
+//postcondition:Produce a random country from the region and display to the screen
 function selectRandomCountry(region){
 	var from = Object.keys(info[region]);
 	var value = -1;
