@@ -26,7 +26,7 @@
  		"253":"Djibouti",
  		"291":"Eritrea",
  		"251":"Ethiopia",
- 		"252":"Somalia",
+ 		"252":"Somalia"
 	},
 	"north": {
 		"213":"Algeria",
@@ -37,7 +37,7 @@
 		"249":"Sudan",
 		"216":"Tunisia",
 		"34":"Canary Islands (Spain)",
-		"351":"Madeira (Portugal)",
+		"351":"Madeira (Portugal)"
 	},
 	"west": {
 		"247":"Ascension Island (United Kingdom)",
