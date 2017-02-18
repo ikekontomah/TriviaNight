@@ -1,4 +1,7 @@
 const info = {
+	/*
+	info is the information on the front end. We have it based on regions in africa (south, east, north, west, and central) and on country code (these same country codes will be used in the backend). Each code is unique to the country.
+	*/
 	south: {
 		267:"Botswana",
 		266:"Lesotho",
@@ -71,17 +74,38 @@ const info = {
  		239: "São Tomé and Príncipe"
 	}
 }
+const topics = {
+	/*The five topics used. Each has values (like 1, 2, etc), and these same values will be used in backend.*/
+	1: "government",
+	2: "economics",
+	3: "sports",
+	4: "entertainment",
+	5: "culture"
+};
 
 function selectRandomCountry(region){
 	var from = Object.keys(info[region]);
 	var value = -1;
 	while (value < 0 || value >= from.length){
-		value = Math.round(Math.random()*100);
+		value = Math.round(Math.random()*from.length);
 	}
 	code = from[value];
 	var country = info[region][code];
 	// country is the random country to display to user, code is the code to send to server
-	console.log(country);
+	return [code, country];
+}
+
+function selectRandomRegion(){
+	/*
+	INPUT: no input. This function
+	*/
+	var from = Object.keys(info); //returns the country region in the JSON file info
+	var value = -1;
+	while (value < 0 || value >= from.length){
+		value = Math.round(Math.random()*from.length);
+	}
+	region = from[value];
+	return region;
 }
 
 
