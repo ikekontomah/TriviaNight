@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Link stylesheet -->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<!-- Link login.css -->
+	<link rel="stylesheet" type="text/css" href="login.css">
 	<!-- Link google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Barrio|Indie+Flower" rel="stylesheet">
 	<!-- Link jQuery -->
@@ -17,16 +19,24 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!-- Link variables JS -->
 	<script type="text/javascript" src="variables.js"></script>
-	<!-- Link the main JS -->
-	<script type="text/javascript" src="main.js"></script>
+	<!-- Link the login JS -->
+	<script type="text/javascript" src="login.js"></script>
 
 </head>
-<body>
+<body class="no-outline">
 <div id='nav-bar' class="container-fluid">ASA Trivia Night</div>
-<div id="index-rest">
-	<div id="index-rest-init">
-		<p>Select a region</p>
-		<div id="map"></div>
+<div id="all" class="container-fluid">
+	<div id='enter-team'>
+		Enter a username:<br>
+		<input type="text" name="team-name" id="username" class="no-outline"  maxlength="15"><br>
+		Enter your team name:
+		<input type="text" name="team-name" id="team-name" class="no-outline" list="teams"  maxlength="15">
+		<datalist id="teams">
+			<option value="MIT">
+			<option value="Harvard">
+			<option value="Wellesley">
+		</datalist><br><br><br>
+		<input type="submit" name="user-submit" id="user-submit" class="no-outline">
 	</div>
 </div>
 </body>

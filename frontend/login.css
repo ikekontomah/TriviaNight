@@ -1,0 +1,54 @@
+/*
+COLOR SCHEME:
+yellow: rgba(251,247,45,1)
+orange: rgba(255,140,5,1)
+green: rgba(33,230,59,1)
+*/
+
+.no-outline, .no-outline:active, .no-outline:hover, .no-outline:focus {
+	outline: none;
+	/*background-color: blue !important;*/
+}
+* {
+	font-size: 2.5rem;
+	transition: background-color 300ms;
+}
+#all {
+	text-align: center;
+	min-height: 405px;
+	display: flex;
+	justify-content: center;
+
+}
+#enter-team {
+	align-self: center;
+	max-height: 100px;
+}
+#username, #team-name {
+	top: 10rem;
+	color: white;
+	background-color: rgba(255,255,255,0);
+	border: none;
+	width: 90%;
+	font-size: 4rem; line-height: 4rem;
+	text-align: left;
+	padding-left: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 0rem;
+	border-bottom: 2.5px solid black;
+}
+#username:focus, #team-name:focus {
+	background-color: rgba(255,255,255,1);
+	color: black;
+}
+#user-submit {
+	border: none; padding: 1rem 5rem;
+	background-color: white;
+	font-weight: bold;
+}
+#user-submit:focus, #team-submit:active {
+	background-color: rgba(255,140,5,1);
+	border: none;
+}
+
+

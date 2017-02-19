@@ -1,21 +1,88 @@
 /*
 COLOR SCHEME:
+yellow: rgba(251,247,45,1)
+orange: rgba(255,140,5,1)
+green: rgba(33,230,59,1)
 */
+.no-outline, #topics, .topics-select, .difficulty-select, .no-outline:active, #topics:active, .topics-select:active, .difficulty-select:active, .no-outline:hover, #topics:hover, .topics-select:hover, .difficulty-select:hover, .no-outline:focus, #topics:focus, .topics-select:focus, .difficulty-select:focus {
+  outline: none;
+  /*background-color: blue !important;*/ }
+
+* {
+  font-family: 'Indie Flower', cursive;
+  transition: background-color 300ms; }
+
+.error-message {
+  color: red; }
+
+body {
+  font-size: 2.5rem;
+  background-color: #21e63b; }
+
 #nav-bar {
-  font-family: 'Barrio', cursive;
-  background-color: rgba(0, 0, 0, 0.1);
+  font-family: 'Barrio', cursive !important;
+  background-color: #fbf72d;
   text-align: center;
   font-size: 4rem;
   padding: 0rem;
   margin: 0rem; }
 
+#index-rest {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+#index-rest-init {
+  width: 100%;
+  align-self: center; }
+
 #map {
   width: 100%; }
 
 path {
-  transition: fill 250ms; }
+  fill: #ff8c05;
+  background-color: #ff8c05;
+  transition: fill 250ms;
+  stroke: #4147ff;
+  text-shadow: 0px 0px 2rem #4147ff; }
 
 path:hover {
-  fill: red; }
+  fill: #4147ff; }
+
+#topics {
+  padding: 1rem 5rem;
+  margin: 0rem auto; }
+
+#topics input[type=submit] {
+  border: none;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 3rem;
+  margin: 0.25rem auto; }
+
+.topics-about {
+  color: black;
+  font-weight: bolder;
+  text-shadow: 0px 0px 1rem white; }
+
+#country-about {
+  color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+  text-shadow: 0px 0px 1rem white; }
+
+.topics-select, .difficulty-select {
+  background-color: #ff8c05;
+  padding: 0 3rem;
+  display: inline-block;
+  margin: 0.25rem auto;
+  width: 80%;
+  transition: text-shadow 100ms; }
+
+.topics-select:hover, .difficulty-select:hover {
+  text-shadow: 2px 2px white; }
+
+.topics-select:focus, .difficulty-select:focus, .topics-select:active, .difficulty-select:active {
+  background-color: white; }
 
 /*# sourceMappingURL=stylesheet.css.map */
