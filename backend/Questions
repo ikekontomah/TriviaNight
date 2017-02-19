@@ -21,9 +21,8 @@ Medium:What is the most modern music genre in Rwanda ? Afrobeat
 Hard:What are the two main tribes of Rwanda ? Tutsis and Hutus
 
 DR. Congo(+243)
-1.Government 
+1.Government
 Easy:Who was the first President of DR Congo?Joseph Kasavubu
-Medium:Who is the Chief Justice of DR Congo? 26
 Medium : In which year did DR Congo gain independence ? 1960
 Hard:Since when has Joseph KAbila been the President of DR.Congo? 2001
 2.Economics
@@ -42,7 +41,4 @@ Hard:Who composed the DR Congo National anthem ? Joseph Lutumba
 Easy:How many languages are spoken in DR Congo? 242
 Medium:Which ethnic group are the earliest inhabitants of Congo ? Pygmies
 Hard:What is the DR Congo dialect of Swahili called ?Kingwana
-<<<<<<< HEAD
 Hard:What is the name of the Rwandan national anthem ? Rwanda Nziza
-=======
->>>>>>> added datagen.py
