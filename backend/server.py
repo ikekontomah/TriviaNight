@@ -57,9 +57,12 @@ def sendData():
 	response = Response(myJson)
 	response.headers.add('Access-Control-Allow-Origin', '*')
 	return response
-@app.route('/addteam', methods=['POST', 'GET'])
+@app.route('/addteam', methods=['POST'])
 def addteam():
 	if request.method == 'POST':
+		username = request.args.get('name')
+		team = request.args.get('team')
+		#add team code
 		
 
 if __name__ == "__main__":
