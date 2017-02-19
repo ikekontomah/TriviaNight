@@ -50,8 +50,8 @@ def sendData():
 							myData[countryCode][topic][difficulty]['answers'] = {}
 							for j, answer in enumerate(qAnswers):
 								myData[countryCode][topic][difficulty]['answers'][j+1] = answer.strip()
-		except TypeError:
-			print("error")
+		except :
+			pass
 	data_file.close()
 	myJson = json.dumps(myData, sort_keys=True, indent=4)
 	response = Response(myJson)
