@@ -28,7 +28,8 @@ def sendData():
 	for i, line in enumerate(lines):
 		try:
 			if("(" in line and ")" in line and "+" in line):
-				countryCode = line[line.index("+")+1:line.index(")")]
+				countryCode = line[line.index("+")+1:]
+				countryCode =countryCode[:countryCode.index(")")]
 				myData[countryCode] = {}
 				for topic in range(1, 6):
 					myData[countryCode][topic] = {}
