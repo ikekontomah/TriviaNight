@@ -5,21 +5,25 @@ that will be in attendance
 <!--This will contain four images since there will be four-schools in attendance , specifically MIT , Havard ,Wellesley,BU which will slide on the homepage at login
 -->
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="image_slider.css">
+	<link rel="stylesheet" type="text/css" href="css/image_slider.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="image_slider_js_component.js"></script>
+	<script type="text/javascript" src="js/image_slider.js"></script>
 </head>
 <body>
-	<div class = "container">
-		<div class="image-sliding-wrapper">
-			<ul id="slide_image">
-				<li><img src="./img/1.png"></li> 
-				<li><img src="./img/2.png"></li>
-				<li><img src="./img/3.png"></li>
-				<li><img src="./img/4.png"></li>
-			</ul>
+	<div id="image_slider_maindiv">
+		<div class = "container">
+			<div class = "image-sliding-wrapper">
+				<ul id = "slide_image">
+					<li><img src="./img/mit_logo.svg" class="svg"></li> 
+					<li><img src="./img/bu_logo.svg" class="svg"></li>
+					<li><img src="./img/wellesley_logo.svg" class="svg"></li>
+					<li><img src="./img/harvard_logo.svg" class="svg"></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>

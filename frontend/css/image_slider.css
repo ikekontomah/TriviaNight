@@ -1,0 +1,30 @@
+/*
+This implementation sets the attributes for the sliders that will be implemented on the
+homepage
+It sets the attributes for the container , and the attributes for the images that 
+will be slid
+*/
+#image_slider_maindiv {
+	z-index: -20;
+}
+#image_slider_maindiv .svg {
+	height: 50rem;
+}
+#image_slider_maindiv .container {
+	width: 100%;
+	padding: 0rem;
+}
+#image_slider_maindiv .image-sliding-wrapper{
+	overflow:scroll;
+}
+#image_slider_maindiv #slide_image{
+	position:relative; 
+	padding:0;
+}
+#image_slider_maindiv #slide_image ul {
+	display: block;
+}
+#image_slider_maindiv #slide_image li{
+	max-width:100%;
+	display: inline-block;
+}
