@@ -62,21 +62,43 @@ def sendData():
 	response = Response(myJson)
 	response.headers.add('Access-Control-Allow-Origin', '*')
 	return response
+@app.route('/view-answer')
+def viewAnswer():
+	with open("current.json", 'r') as my_file:
+		data = json.load(my_file)
+	myJson = json.dumps(data, sort_keys=True, indent=4)
+	response = Response(myJson)
+	response.headers.add('Access-Control-Allow-Origin', "*")
+	return response
 @app.route('/getcountry')
 def sendCountry():
 	countryCode = request.args.get('code')
-	with open("data.json") as my_file:
+	with open("data.json", "r") as my_file:
 		data = json.load(my_file)
 	myJson = json.dumps(data[str(countryCode)], sort_keys=True)
 	response = Response(myJson)
 	response.headers.add('Access-Control-Allow-Origin', '*')
 	return response
-@app.route('/setquestion', methods=['POST'])
+@app.route('/setquestion', methods=['GET'])
 def setQuestion():
-	if request.method == 'POST':
+	if request.method == 'GET':
 		with open("current.json", "r") as my_file:
 			data = json.load(my_file)
 		data["id"] = request.args.get('id')
+		data["team"] = request.args.get('team')
+
+		questionId = int(data["id"])
+		difficulty = questionId % 10
+		topic = (questionId//10)%10
+		countryCode = questionId//100
+
+		with open("data.json") as my_file:
+			allData= json.load(my_file)
+		correct = allData[str(countryCode)][str(topic)][str(difficulty)]["correct"]
+		for i in allData[str(countryCode)][str(topic)][str(difficulty)]["answers"].keys():
+			if allData[str(countryCode)][str(topic)][str(difficulty)]["answers"][i] == correct:
+				data["correct"] = i
+
 		os.remove("current.json")
 		with open("current.json", "w") as my_file:
 			json.dump(data, my_file, indent=4)
@@ -128,6 +150,15 @@ def savepoints():
 		points = int(points)
 		questionId = request.args.get('id')
 		answer = request.args.get('answer')
+
+		with open("current.json", "r") as my_file:
+			data = json.load(my_file)
+		data["answer"] = answer
+
+		os.remove("current.json")
+		with open("current.json", "w") as my_file:
+			json.dump(data, my_file, indent=4)
+
 		with open("teams.json", "r") as my_file:
 			data = json.load(my_file)
 			if not question in data[team].keys():
