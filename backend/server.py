@@ -120,14 +120,14 @@ def addteam():
 		response = Response(myJson)
 		response.headers.add("Access-Control-Allow-Origin", "*")
 		return response
-@app.route('/savepoints', methods=['GET'])
+@app.route('/savepoints', methods=['POST'])
 def savepoints():
-	if request.method =='GET':
+	if request.method =='POST':
 		team = request.args.get('team')
 		points = request.args.get('points')
 		points = int(points)
 		questionId = request.args.get('id')
-
+		answer = request.args.get('answer')
 		with open("teams.json", "r") as my_file:
 			data = json.load(my_file)
 			if not question in data[team].keys():
