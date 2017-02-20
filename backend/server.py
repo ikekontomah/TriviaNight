@@ -6,16 +6,20 @@ from unidecode import unidecode
 app = Flask(__name__)
 @app.route('/')
 def respond():
-	return send_file("test.html")
+	return send_file("../frontend/login.html")
+@app.route('/coordinator/')
+def send_coord():
+	return send_file("../frontend/index.html")
 @app.route('/img/<image_name>')
 def sendImage(image_name):
-	return send_file("img/"+image_name)
+	return send_file("../frontend/img/"+image_name)
 @app.route('/js/<script_name>')
 def sendScript(script_name):
-	return send_file("js/"+script_name)
+	return send_file("../frontend/js/"+script_name)
 @app.route('/css/<css_name>')
 def sendCss(css_name):
-	return send_file("css/"+css_name)
+	return send_file("../frontend/css/"+css_name)
+
 @app.route('/data')
 def sendData():
 	myData = {}
