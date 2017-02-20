@@ -1,9 +1,316 @@
+const info = {
+	/*
+	info is the information on the front end. We have it based on regions in africa (south, east, north, west, and central)
+	 and on country code (these same country codes will be used in the backend). Each code is unique to the country.
+	*/
+	south: {
+		267:"Botswana",
+		266:"Lesotho",
+		264:"Namibia",
+		27:"South Africa",
+		268:"Swaziland",
+		260:"Zambia",
+		263:"Zimbabwe"
+	},
+	east: {
+		257:"Burundi",
+ 		269:"Comoros",
+ 		254:"Kenya",
+ 		261:"Madagascar",
+ 		265:"Malawi",
+ 		230:"Mauritius",
+ 		262:"Mayotte",
+ 		258:"Mozambique",
+ 		262:"Réunion",
+ 		250:"Rwanda",
+ 		248:"Seychelles",
+ 		255:"Tanzania",
+ 		256:"Uganda",
+ 		253:"Djibouti",
+ 		291:"Eritrea",
+ 		251:"Ethiopia",
+ 		252:"Somalia",
+	},
+	north: {
+		213:"Algeria",
+		20:"Egypt",
+		218:"Libya",
+		212:"Morocco",
+		211:"South Sudan",
+		249:"Sudan",
+		216:"Tunisia",
+		34:"Canary Islands",
+		351:"Madeira",
+	},
+	west: {
+		247:"Ascension Island",
+		229:"Benin",
+		226:"Burkina Faso",
+		238:"Cape Verde",
+		225:"Ivory Coast",
+		220:"Gambia",
+		233:"Ghana",
+		224:"Guinea",
+		245:"Guinea-Bissau",
+		231:"Liberia",
+		223:"Mali",
+		222:"Mauritania",
+		227:"Niger",
+		234:"Nigeria",
+		290:"Saint Helena",
+		221:"Senegal",
+		232:"Sierra Leone",
+		228:"Togo",
+		290:"Tristan da Cunha"
+	},
+	central: {
+		244: "Angola",
+ 		237: "Cameroon",
+ 		236: "Central African Republic",
+ 		235: "Chad",
+ 		243: "Democratic Republic of the Congo",
+ 		242: "Republic of the Congo",
+ 		240: "Equatorial Guinea",
+ 		241: "Gabon",
+ 		239: "São Tomé and Príncipe"
+	}
+}
+const codeToRegion = {
+	/*
+	Each code refers the region it's in.
+	*/
+	20:"north",
+	27:"south",
+	34:"north",
+	211:"north",
+	212:"north",
+	213:"north",
+	216:"north",
+	218:"north",
+	220:"west",
+	221:"west",
+	222:"west",
+	223:"west",
+	224:"west",
+	225:"west",
+	226:"west",
+	227:"west",
+	228:"west",
+	229:"west",
+	230:"east",
+	231:"west",
+	232:"west",
+	233:"west",
+	234:"west",
+	235:"central",
+	236:"central",
+	237:"central",
+	238:"west",
+	239:"central",
+	240:"central",
+	241:"central",
+	242:"central",
+	243:"central",
+	244:"central",
+	245:"west",
+	247:"west",
+	248:"east",
+	249:"north",
+	250:"east",
+	251:"east",
+	252:"east",
+	253:"east",
+	254:"east",
+	255:"east",
+	256:"east",
+	257:"east",
+	258:"east",
+	260:"south",
+	261:"east",
+	262:"east",
+	263:"south",
+	264:"south",
+	265:"east",
+	266:"south",
+	267:"south",
+	268:"south",
+	269:"east",
+	290:"west",
+	291:"east",
+	351:"north"
+};
+const topics = {
+	/*The five topics used. Each has values (like 1, 2, etc), and these same values will be used in backend.*/
+	1: "government",
+	2: "economics",
+	3: "sports",
+	4: "entertainment",
+	5: "culture"
+};
+var data243 = `
+{
+	"243": {
+        "1": {
+            "1": {
+                "answers": {
+                    "1": "Joseph Kasavubu"
+                },
+                "correct": "Joseph Kasavubu",
+                "id": 24311,
+                "question": "Who was the first President of DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "1960"
+                },
+                "correct": "1960",
+                "id": 24312,
+                "question": " In which year did DR Congo gain independence ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "2001"
+                },
+                "correct": "2001",
+                "id": 24313,
+                "question": "Since when has Joseph KAbila been the President of DR.Congo?",
+                "valid": true
+            }
+        },
+        "2": {
+            "1": {
+                "answers": {
+                    "1": "Congolese Franc"
+                },
+                "correct": "Congolese Franc",
+                "id": 24321,
+                "question": "What is the currency of DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "cobalt ore"
+                },
+                "correct": "cobalt ore",
+                "id": 24322,
+                "question": "What mineral is produced in large quantities by DR Congo?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "784 US dollars(2013)"
+                },
+                "correct": "784 US dollars(2013)",
+                "id": 24323,
+                "question": "What is the GDP per capita of DR congo ?",
+                "valid": true
+            }
+        },
+        "3": {
+            "1": {
+                "answers": {
+                    "1": "Fimbu"
+                },
+                "correct": "Fimbu",
+                "id": 24331,
+                "question": "What was teh DR Congo national team known for at the just ended 2017 AFCON ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "2009 and 2010"
+                },
+                "correct": "2009 and 2010",
+                "id": 24332,
+                "question": "In what years did TP Mazembe win the CAF Champions league back to back ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Kabuscorp SCP"
+                },
+                "correct": "Kabuscorp SCP",
+                "id": 24333,
+                "question": "What team does Tresor Mputu Mabi play for currently ?",
+                "valid": true
+            }
+        },
+        "4": {
+            "1": {
+                "answers": {
+                    "1": "Emenaya"
+                },
+                "correct": "Emenaya",
+                "id": 24341,
+                "question": "Who sang Nzinzi ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Soukous"
+                },
+                "correct": "Soukous",
+                "id": 24342,
+                "question": "What is the popular name for Congolese music ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Joseph Lutumba"
+                },
+                "correct": "Joseph Lutumba",
+                "id": 24343,
+                "question": "Who composed the DR Congo National anthem ?",
+                "valid": true
+            }
+        },
+        "5": {
+            "1": {
+                "answers": {
+                    "1": "242"
+                },
+                "correct": "242",
+                "id": 24351,
+                "question": "How many languages are spoken in DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Pygmies"
+                },
+                "correct": "Pygmies",
+                "id": 24352,
+                "question": "Which ethnic group are the earliest inhabitants of Congo ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Kingwana"
+                },
+                "correct": "Kingwana",
+                "id": 24353,
+                "question": "What is the DR Congo dialect of Swahili called ?",
+                "valid": true
+            }
+        }
+    }
+}`;
+//It's better to have this SVG file here instead of in the html code because that would make it cumbersome on the html file.
+var africaMapSVG = `
+<!-- 
+SOURCE: https://commons.wikimedia.org/wiki/File:Blank_Map-Africa.svg
+DEPENDENCY SOURCES (01): https://en.wikipedia.org/wiki/Telephone_numbers_in_Africa
+ON: Feb 18, 2017
+MODIFIED CONTENT: <TRUE>. The map key was removed. The fill colors of every path were changed to "#fff" (white). All path id were removed. New path id based on the country code in source (01) were used. For example, South Africa's new id became "c-27" (which stands for code-27). The stroke-line-cap="round" was also removed. Then, all was inputed into Adobe Illustrator to optimize the web usage. The new saved version only contains the country id's and a layer0.
+-->
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1200 1230" style="enable-background:new 0 0 1200 1230;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;}
+	.st0{}
 </style>
 <g id="layer0">
 	<path id="c-20" class="st0" d="M726.7,263.8l132-3.9l4.3,4.2l8.7-1.1c0.3-2.5,44.3-2.8,44.6-5.3l-22.4-17.9l-2.9-14.3l4.6,0.2
@@ -237,7 +544,7 @@
 		c2.3-2.5,4-8.4,3.4-12.6l3.5-1.7l-0.9-9l10.5-13.4l-0.3-6.6l18.1-1L712.4,307.8z"/>
 	<path id="c-256" class="st0" d="M833.7,575l3.3-2.5c13.3,3.4,27.1,1.4,41-0.5l8.3-6.9c4.7,2.8,8.2,7.5,8.9,17.4l8,6.4v19.4
 		l-29.7,44.7l-46.3,0.9l-7.1,5.7l-2.8,0.1l-1.6-2.1l1.1-27.6l10.4-15.7l16.5-14.8l-10-6.3L833.7,575L833.7,575z"/>
-	<path id="c-212_1_" class="st0" d="M116.5,262.9c2.1-14.7-7.1-35.4,21.5-35.9l6-44.4l50.9,4.5l3.9-30l-68.1-5
+	<path id="c-212" class="st0" d="M116.5,262.9c2.1-14.7-7.1-35.4,21.5-35.9l6-44.4l50.9,4.5l3.9-30l-68.1-5
 		c-6.3,9.7-10,17.9-19.5,21.7c-9,3.6-12.5,14.7-15.1,24.3l-26.8,30.7c-1,7-5,11.6-10.4,15.2c-4.9,6.4-7.9,14.4-8.6,21.4l6.8-6.2
 		L116.5,262.9z"/>
 	<path id="c-236" class="st0" d="M571.4,512L556,537.2l2.1,18.3c6.6,12.9,14.2,24.8,24.5,34.5c6.3-7.1,9.1-12.5,21.7-15.7l10.9,4.8
@@ -254,4 +561,4 @@
 		c1.6-0.3,3.6,0.5,4.4,1.6c1.2,1.6,2.6,3.1,3.8,4.6c0.6,0.8,0.6,2.7,1.1,3.8c0.7,1.5,1.6,2.6,2.1,4.2c0.5,1.6-0.2,3.3-0.9,4.7
 		c-0.8,1.7-2,2.6-3.2,3.9c-1,1-2.1,1.9-3.2,2.7C779.5,1146.8,778.7,1147,778.1,1147.4z"/>
 </g>
-</svg>
+</svg>`;

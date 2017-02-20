@@ -1,0 +1,4 @@
+BU: https://en.wikipedia.org/wiki/File:Boston_University_Terriers.svg
+WELLESLEY: https://en.wikipedia.org/wiki/File:Formal_Logo_of_Wellesley_College,_Wellesley,_MA,_USA.svg
+MIT: https://commons.wikimedia.org/wiki/File:MIT_logo.svg
+HARVARD: https://en.wikipedia.org/wiki/File:Harvard_Wreath_Logo_1.svg

@@ -42,7 +42,22 @@ $(document).ready(function(){
 		var region = codeToRegion[code];
 		currentRegion = region;
 		sendToServer[0] = selectRandomCountry(region)[0];
-		chooseTopics(selectRandomCountry(region)[1]);
+		var next;
+		$.ajax({
+			url: "/getcountry",
+			type: "GET",
+			async: false,
+			data: {code: sendToServer[0]},
+			success: function(data){
+				print("SUCCESS", "green");
+				next = data;
+			},
+			error: function(xhr, status, error){
+				print("ERROR: "+error, "red");
+				next = null;
+			}
+		});
+		chooseTopics(selectRandomCountry(region)[1], next);
 	});
 	fixHeightIndexRest();
 });
@@ -50,7 +65,8 @@ function initialize(){
 	$("#index-rest-init").html('<p>Select a region</p><div id="map"></div>');
 	$("#map").html(africaMapSVG);
 }
-function chooseTopics(country){
+function chooseTopics(country, next){
+	//next is being carried over
 	$("#index-rest-init").fadeTo("fast", 0);
 	setTimeout(function(){
 		$("#index-rest-init").html(`<p>You will answer about <br><span id="country-about">${country}</span></p><p>Select a topic</p><div id="topics"></div>`);
@@ -65,12 +81,12 @@ function chooseTopics(country){
 		$(".topics-select").click(function(){
 			var value = this.id.replace(/t-/,"");
 			sendToServer[1] = value;
-			selectDifficulty(country);
+			selectDifficulty(country, next);
 		});
-	}, 1000);
-	
+	}, 1000);	
 }
-function selectDifficulty(country){
+function selectDifficulty(country, next){
+	//next is being carried over
 	$("#index-rest-init").fadeTo("fast", 0);
 	setTimeout(function(){
 		$("#index-rest-init").html(`<p>You will answer about the <span class="topics-about">${topics[sendToServer[1]]}</span> of <br><span id="country-about">${country}</span></p><p>Select a question difficulty</p><div id="difficulty"></div>`);
@@ -85,18 +101,40 @@ function selectDifficulty(country){
 			var value = this.id.replace(/t-/,"");
 			sendToServer[2] = value;
 			// selectDifficulty();
-			/*
 			$.ajax({
-				url: "",
+				url: "/setquestion",
 				type: "POST",
-				data: {data: sendToServer},
+				data: {id: sendToServer.join().replace(/,/g,"")},
 				async: false,
-				success: function(){},
-				error: (xhr, status, error){}
+				success: function(data){
+					print(data, "green");
+					displayQuestion(next);
+				},
+				error: function(xhr, status, error){
+					print("ERROR: "+error, "red");
+					displayQuestion(next);
+				}
 			});
-			*/
 		});
 	}, 500);
+}
+function displayQuestion(next){
+	next = data243; //JUST FOR PRACTICE
+	next = JSON.parse(next);
+	var i0 = sendToServer[0].toString(), i1 = sendToServer[1].toString(), i2 = sendToServer[2].toString();
+	var i0 = "243"; //JUST FOR PRACTICE
+	question = next[i0][i1][i2];
+	//next is being carried over
+	$("#index-rest-init").fadeTo("fast", 0);
+	answerChoices = "";
+	console.log(Object.keys(question["answers"]));
+	for (var i = 0; i < Object.keys(question["answers"]).length; i++) {
+		var id = Object.keys(question["answers"])[i];
+		answerChoices = "<li class='answer-choices'>"+question["answers"][id]+"</li><br>";
+	}/**/
+	//loop through answer choices and list them with li's and br's
+	$("#index-rest-init").html(`<p id="question">${question["question"]}</p><div id="answers">${answerChoices}</div>`);
+	$("#index-rest-init").fadeTo("fast", 1);
 }
 function selectRandomCountry(region){
 	/*
@@ -134,7 +172,13 @@ function fixHeightIndexRest(){
 		$("#index-rest").height(height-75);
 	}
 }
-
+function print(message, color){
+	//INPUT: string
+	if (color == "" || color == null){
+		return console.log("%c"+message, "font-weight:bolder;");
+	}
+	return console.log("%c"+message, "font-weight:bolder; color:"+color+";");
+}
 
 
 

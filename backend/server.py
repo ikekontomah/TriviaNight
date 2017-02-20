@@ -6,16 +6,20 @@ from unidecode import unidecode
 app = Flask(__name__)
 @app.route('/')
 def respond():
-	return send_file("test.html")
+	return send_file("../frontend/login.html")
+@app.route('/coordinator/')
+def send_coord():
+	return send_file("../frontend/index.html")
 @app.route('/img/<image_name>')
 def sendImage(image_name):
-	return send_file("img/"+image_name)
+	return send_file("../frontend/img/"+image_name)
 @app.route('/js/<script_name>')
 def sendScript(script_name):
-	return send_file("js/"+script_name)
+	return send_file("../frontend/js/"+script_name)
 @app.route('/css/<css_name>')
 def sendCss(css_name):
-	return send_file("css/"+css_name)
+	return send_file("../frontend/css/"+css_name)
+
 @app.route('/data')
 def sendData():
 	myData = {}
@@ -47,6 +51,8 @@ def sendData():
 							qAnswers = sorted(qLine[qLine.index("?")+1:].split(","))
 
 							qAnswers = list(filter(lambda a: a!= "", qAnswers))
+							myData[countryCode][topic][difficulty]["id"] = int(countryCode)*100 + int(topic) * 10 + int(difficulty)
+							myData[countryCode][topic][difficulty]["valid"] = True
 							myData[countryCode][topic][difficulty]['answers'] = {}
 							for j, answer in enumerate(qAnswers):
 								myData[countryCode][topic][difficulty]['answers'][j+1] = answer.strip()
@@ -54,18 +60,69 @@ def sendData():
 			pass
 	data_file.close()
 	myJson = json.dumps(myData, sort_keys=True, indent=4)
+	with open("data.json", "w") as my_file:
+		my_file.write(myJson)
+
 	response = Response(myJson)
 	response.headers.add('Access-Control-Allow-Origin', '*')
 	return response
+@app.route('/getcountry')
+def sendCountry():
+	countryCode = request.args.get('code')
+
 @app.route('/addteam', methods=['POST'])
 def addteam():
 	if request.method == 'POST':
-		username = request.args.get('name')
 		team = request.args.get('team')
-		#add team code
-		
+		with open("teams.json", "r") as my_file:
+			data = json.load(my_file)
+			data[team] = {}
+		os.remove("teams.json")
+		with open("teams.json", "w") as my_file:
+			json.dump(data, my_file, indent=4)
+		response_data = {"response": "Your team has been saved"}
+		myJson = json.dumps(response_data, sort_keys=True)
+		response = Response(myJson)
+		response.headers.add("Access-Control-Allow-Origin", "*")
+		return response
+@app.route('/savepoints', methods=['GET'])
+def savepoints():
+	if request.method =='GET':
+		team = request.args.get('team')
+		points = request.args.get('points')
+		points = int(points)
+		questionId = request.args.get('id')
 
+		with open("teams.json", "r") as my_file:
+			data = json.load(my_file)
+			if not question in data[team].keys():
+				data[team][questionId] = points
+			else:
+				response_data={"response":"Failure: Question already answered"}
+				myJson = json.dumps(response_data, sort_keys=True)
+				response = Response(myJson)
+				return response
+		os.remove("teams.json")
+		with open("teams.json", "w") as my_file:
+			json.dump(data, my_file, indent=4)
+		response_data={"response":"Success: your answer was recorded"}
+		myJson = json.dumps(response_data, sort_keys=True)
+		response = Response(myJson)
+		response.headers.add("Access-Control-Allow-Origin", "*")
+		return response
+@app.route('/statistics')
+def getstats():
+	with open("teams.json", "r") as my_file:
+		data = json.load(my_file)
+	results = {}
+	for team in data.keys():
+		results[team] = 0
+		for question in data[team].keys():
+			point = data[team][question]
+			point  = int(question)
+			results[team] = results[team] + point
+	response = Response(json.dumps(results, sort_keys=True))
+	response.headers.add("Access-Control-Allow-Origin", "*")
+	return response
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5064, debug=True)
-
-
