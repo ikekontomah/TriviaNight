@@ -6,6 +6,12 @@ $(document).ready(function(){
 	*/
 	console.log("%cASA TRIVIA NIGHT","font-weight: bold; font-size: 1.5rem;");
 	initialize();
+});
+function initialize(){
+	$("#index-rest-init").html('<p>Select a region</p><div id="map"></div>');
+	$("#map").html(africaMapSVG);
+	$("#index-rest-init").fadeTo("fast", 1);
+
 	$("path").hover(function(){
 		//This makes the hover over the entire region instead of just the country
 		var id = this.id;
@@ -60,11 +66,6 @@ $(document).ready(function(){
 		chooseTopics(selectRandomCountry(region)[1], next);
 	});
 	fixHeightIndexRest();
-});
-function initialize(){
-	$("#index-rest-init").html('<p>Select a region</p><div id="map"></div>');
-	$("#map").html(africaMapSVG);
-	$("#index-rest-init").fadeTo("fast", 1);
 }
 function chooseTopics(country, next){
 	//next is being carried over
@@ -141,12 +142,15 @@ function displayQuestion(next){
 			$("#view-answer").click(function(){
 				var id_ = "a-";
 				var value;
+				var correctID;
 				$.ajax({
 					url: "/view-answer",
 					type: "GET",
 					async: false,
 					success: function(data){
-						id_ = id_ + data;
+						var use = JSON.parse(data);
+						id_ = id_ + use.answer;
+						correctID = id_ + use.correct;
 						value = $("#"+id_).html();
 					},
 					error: function(xhr, status, error){
@@ -158,8 +162,15 @@ function displayQuestion(next){
 					$("#index-rest-init").append(`<p style="font-size: 10rem;">+${sendToServer[2]*10}</p>`);
 				} else {
 					$("#"+id_).css("background-color", redWrong);
+					$("#"+correctID).css("background-color", blueRight);
 					$("#index-rest-init").append(`<p style="font-size: 10rem; color: ${redWrong};">-${sendToServer[2]*5}</p>`);
 				}
+				$("#view-answer").html(`<div id="view-answer-next">NEXT</div>`);
+				$("#view-answer-next").click(function(){
+					$("#index-rest-init").fadeTo("fast", 0);
+					initialize();
+					print("WORKING ON IT", "blue");
+				});
 			});	
 		}, 10);
 	}, 1000);

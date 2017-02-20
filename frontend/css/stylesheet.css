@@ -4,11 +4,11 @@ yellow: rgba(251,247,45,1)
 orange: rgba(255,140,5,1)
 green: rgba(33,230,59,1)
 */
-.no-outline, #topics, .topics-select, .difficulty-select, .answer-choices, #view-answer, .no-outline:active, #topics:active, .topics-select:active, .difficulty-select:active, .answer-choices:active, #view-answer:active, .no-outline:hover, #topics:hover, .topics-select:hover, .difficulty-select:hover, .answer-choices:hover, #view-answer:hover, .no-outline:focus, #topics:focus, .topics-select:focus, .difficulty-select:focus, .answer-choices:focus, #view-answer:focus {
+.no-outline, #topics, .topics-select, .difficulty-select, .answer-choices, #view-answer, #view-answer-next, .no-outline:active, #topics:active, .topics-select:active, .difficulty-select:active, .answer-choices:active, #view-answer:active, #view-answer-next:active, .no-outline:hover, #topics:hover, .topics-select:hover, .difficulty-select:hover, .answer-choices:hover, #view-answer:hover, #view-answer-next:hover, .no-outline:focus, #topics:focus, .topics-select:focus, .difficulty-select:focus, .answer-choices:focus, #view-answer:focus, #view-answer-next:focus {
   outline: none;
   /*background-color: blue !important;*/ }
 
-.no-select, #view-answer {
+.no-select, *, #view-answer, #view-answer-next {
   -webkit-user-select: none;
   /* Chrome all / Safari all */
   -moz-user-select: none;
@@ -113,10 +113,15 @@ path:hover {
   padding: auto 5rem;
   background-color: rgba(0, 0, 0, 0.1); }
 
-#view-answer:hover {
+#view-answer-next {
+  padding: auto 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; }
+
+#view-answer:hover, #view-answer-next:hover {
   background-color: #ff8c05; }
 
-#view-answer:active, #view-answer:focus {
+#view-answer:active, #view-answer:focus, #view-answer-next:active, #view-answer-next:focus {
   background-color: white; }
 
 /*# sourceMappingURL=stylesheet.css.map */

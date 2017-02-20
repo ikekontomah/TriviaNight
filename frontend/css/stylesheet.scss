@@ -16,6 +16,7 @@ green: rgba(33,230,59,1)
 	user-select: none;          /* Likely future */      
 }
 * {
+	@extend .no-select;
 	font-family: 'Indie Flower', cursive;
 	transition: background-color 300ms;
 }
@@ -111,11 +112,16 @@ path:hover {
 	padding: auto 5rem;
 	background-color: rgba(0,0,0,0.1);
 }
-#view-answer:hover {
+#view-answer-next {
+	@extend .no-outline, .no-select;
+	padding: auto 5rem;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+#view-answer:hover, #view-answer-next:hover {
 	background-color: rgba(255,140,5,1);
 }
-#view-answer:active, #view-answer:focus {
-	
+#view-answer:active, #view-answer:focus, #view-answer-next:active, #view-answer-next:focus {
 	background-color: rgba(255,255,255,1);
 }
 
