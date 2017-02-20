@@ -33,29 +33,24 @@ def sendData():
 				for topic in range(1, 6):
 					myData[countryCode][topic] = {}
 					for difficulty in range(1, 6):
-						myData[countryCode][topic] = {}
-						for difficulty in range(1, 4):
-							myData[countryCode][topic][difficulty] = {}
-							qNumber = i + (topic -1 )*4 + 1 + difficulty
-							qLine = unidecode(lines[qNumber])
-							qLine = qLine[:-1]
-
-							#Get the question content
-							qData = qLine[qLine.index(":")+1: qLine.index("?")+1]
-							myData[countryCode][topic][difficulty]['question'] = qData
-
-							#Get the correct answer
-							correct = qLine[qLine.index("?")+1:].split(",")[0]
-							myData[countryCode][topic][difficulty]['correct'] = correct.strip()
-							#Get alternate answers
-							qAnswers = sorted(qLine[qLine.index("?")+1:].split(","))
-
-							qAnswers = list(filter(lambda a: a!= "", qAnswers))
-							myData[countryCode][topic][difficulty]["id"] = int(countryCode)*100 + int(topic) * 10 + int(difficulty)
-							myData[countryCode][topic][difficulty]["valid"] = True
-							myData[countryCode][topic][difficulty]['answers'] = {}
-							for j, answer in enumerate(qAnswers):
-								myData[countryCode][topic][difficulty]['answers'][j+1] = answer.strip()
+						myData[countryCode][topic][difficulty] = {}
+						qNumber = i + (topic -1 )*4 + 1 + difficulty
+						qLine = unidecode(lines[qNumber])
+						qLine = qLine[:-1]
+						#Get the question content
+						qData = qLine[qLine.index(":")+1: qLine.index("?")+1]
+						myData[countryCode][topic][difficulty]['question'] = qData
+						#Get the correct answer
+						correct = qLine[qLine.index("?")+1:].split(",")[0]
+						myData[countryCode][topic][difficulty]['correct'] = correct.strip()
+						#Get alternate answers
+						qAnswers = sorted(qLine[qLine.index("?")+1:].split(","))
+						qAnswers = list(filter(lambda a: a!= "", qAnswers))
+						myData[countryCode][topic][difficulty]["id"] = int(countryCode)*100 + int(topic) * 10 + int(difficulty)
+						myData[countryCode][topic][difficulty]["valid"] = True
+						myData[countryCode][topic][difficulty]['answers'] = {}
+						for j, answer in enumerate(qAnswers):
+							myData[countryCode][topic][difficulty]['answers'][j+1] = answer.strip()
 		except :
 			pass
 	data_file.close()
