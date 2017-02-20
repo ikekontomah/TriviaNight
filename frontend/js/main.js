@@ -64,6 +64,7 @@ $(document).ready(function(){
 function initialize(){
 	$("#index-rest-init").html('<p>Select a region</p><div id="map"></div>');
 	$("#map").html(africaMapSVG);
+	$("#index-rest-init").fadeTo("fast", 1);
 }
 function chooseTopics(country, next){
 	//next is being carried over
@@ -124,17 +125,45 @@ function displayQuestion(next){
 	var i0 = sendToServer[0].toString(), i1 = sendToServer[1].toString(), i2 = sendToServer[2].toString();
 	var i0 = "243"; //JUST FOR PRACTICE
 	question = next[i0][i1][i2];
+	
 	//next is being carried over
 	$("#index-rest-init").fadeTo("fast", 0);
-	answerChoices = "";
-	console.log(Object.keys(question["answers"]));
-	for (var i = 0; i < Object.keys(question["answers"]).length; i++) {
-		var id = Object.keys(question["answers"])[i];
-		answerChoices = "<li class='answer-choices'>"+question["answers"][id]+"</li><br>";
-	}/**/
-	//loop through answer choices and list them with li's and br's
-	$("#index-rest-init").html(`<p id="question">${question["question"]}</p><div id="answers">${answerChoices}</div>`);
-	$("#index-rest-init").fadeTo("fast", 1);
+	setTimeout(function(){
+		answerChoices = "";
+		for (var i = 0; i < Object.keys(question["answers"]).length; i++) {
+			var id = Object.keys(question["answers"])[i];
+			answerChoices = "<li class='answer-choices' id='a-"+id+"'>"+question["answers"][id]+"</li><br>";
+		}/**/
+		//loop through answer choices and list them with li's and br's
+		$("#index-rest-init").html(`<p id="question">${question["question"]}</p><div id="view-answer">View Answer</div><div id="answers">${answerChoices}</div>`	);
+		$("#index-rest-init").fadeTo("fast", 1);
+		setTimeout(function(){
+			$("#view-answer").click(function(){
+				var id_ = "a-";
+				var value;
+				$.ajax({
+					url: "/view-answer",
+					type: "GET",
+					async: false,
+					success: function(data){
+						id_ = id_ + data;
+						value = $("#"+id_).html();
+					},
+					error: function(xhr, status, error){
+						print("ERROR: "+error, "red");
+					}
+				});
+				if (value == question["correct"]) {
+					$("#"+id_).css("background-color", blueRight);
+					$("#index-rest-init").append(`<p style="font-size: 10rem;">+${sendToServer[2]*10}</p>`);
+				} else {
+					$("#"+id_).css("background-color", redWrong);
+					$("#index-rest-init").append(`<p style="font-size: 10rem; color: ${redWrong};">-${sendToServer[2]*5}</p>`);
+				}
+			});	
+		}, 10);
+	}, 1000);
+	
 }
 function selectRandomCountry(region){
 	/*

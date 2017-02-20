@@ -147,6 +147,8 @@ const topics = {
 	4: "entertainment",
 	5: "culture"
 };
+var blueRight = "rgba(117,225,255,1)";
+var redWrong = "rgba(255,84,76,1)";
 var data243 = `
 {
 	"243": {

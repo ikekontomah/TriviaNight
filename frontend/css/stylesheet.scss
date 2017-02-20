@@ -9,6 +9,12 @@ green: rgba(33,230,59,1)
 	outline: none;
 	/*background-color: blue !important;*/
 }
+.no-select {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */      
+}
 * {
 	font-family: 'Indie Flower', cursive;
 	transition: background-color 300ms;
@@ -83,5 +89,33 @@ path:hover {
 }
 .topics-select:focus, .difficulty-select:focus, .topics-select:active, .difficulty-select:active {
 	background-color: white;
+}
+#question {
+	margin: 3rem auto auto auto;
+	color: black;
+	font-weight: bolder;
+	text-shadow: 0px 0px 1rem white;
+}
+#answers {}
+.answer-choices {
+	select: no-select;
+	cursor: default;
+	padding: auto 5rem;
+	display: inline-block;
+	border-bottom: 2px solid black;
+	@extend .no-outline;
+	select: no-select;
+}
+#view-answer {
+	@extend .no-outline, .no-select;
+	padding: auto 5rem;
+	background-color: rgba(0,0,0,0.1);
+}
+#view-answer:hover {
+	background-color: rgba(255,140,5,1);
+}
+#view-answer:active, #view-answer:focus {
+	
+	background-color: rgba(255,255,255,1);
 }
 
