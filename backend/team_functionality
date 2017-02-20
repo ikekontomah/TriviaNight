@@ -1,0 +1,13 @@
+#Allows people to create teams or be members of teams
+def add_team(name,team):
+
+
+
+
+#Takes the team name and produce the teams score 
+def save_team_points(name,team,points,question):
+
+
+
+#Returns the team points to allow for determining the best team at the end of the competition
+def get_stats():
