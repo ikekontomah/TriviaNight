@@ -66,8 +66,24 @@ def addteam():
 	if request.method == 'POST':
 		username = request.args.get('name')
 		team = request.args.get('team')
-		#add team code
-		
+		if os.path.isfile("teams/"+team+".txt"):
+			with open("teams/"+team+".txt", "a") as my_file:
+				my_file.write(username)
+		else:
+			with open("teams/"+team+".txt", "w") as my_file:
+				my_file.write(username)
+		answer_data = {"response": "success"}
+		myJson = json.dumps(answer_data, sort_keys=True)
+		response = Response(myJson)
+		return response
+@app.route('/savepoints', methods=['post'])
+def savepoints():
+	if request.method =='POST':
+		username = request.args.get('name')
+		team = request.args.get('team')
+		points = request.args.get('points')
+		points = int(points)
+		question = request.args.get('question')
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5064, debug=True)
