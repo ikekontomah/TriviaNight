@@ -69,7 +69,46 @@ def sendData():
 @app.route('/getcountry')
 def sendCountry():
 	countryCode = request.args.get('code')
+	with open("data.json") as my_file:
+		data = json.load(my_file)
+	myJson = json.dumps(data[str(countryCode)], sort_keys=True)
+	response = Response(myJson)
+	response.headers.add('Access-Control-Allow-Origin', '*')
+	return response
+@app.route('/setquestion', methods=['POST'])
+def setQuestion():
+	if request.method == 'POST':
+		with open("current.json", "r") as my_file:
+			data = json.load(my_file)
+		data["id"] = request.args.get('id')
+		os.remove("current.json")
+		with open("current.json", "w") as my_file:
+			json.dump(data, my_file, indent=4)
+		response_data = {"response":"Question set to "+str(request.args.get("id"))}
+		myJson = json.dumps(response_data, sort_keys=True)
+		response = Response(myJson)
+		response.headers.add("Add-Control-Allow-Origin", "*")
+		return response
+@app.route('/getcurrentquestion', methods=['GET'])
+def sendQuestion():
+	with open("current.json", "r") as my_file:
+		data = json.load(my_file)
+	qId = data["id"]
+	qId = int(qId)
+	difficulty = qId%10
+	topic = (qId//10)%10
+	countryCode = qId//100
 
+	with open("data.json", "r") as my_file:
+	    data = json.load(my_file)
+	myJson = data[str(countryCode)][str(topic)][str(difficulty)]
+	myJson = json.dumps(myJson, sort_keys=True)
+	response = Response(myJson)
+	response.headers.add("Add-Control-Allow-Origin", "*")
+	data[str(countryCode)][str(topic)][str(difficulty)]["valid"] = False
+	with open("data.json", "w") as my_file:
+		json.dump(data, my_file, indent=4)
+	return response
 @app.route('/addteam', methods=['POST'])
 def addteam():
 	if request.method == 'POST':
