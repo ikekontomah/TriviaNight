@@ -1,0 +1,296 @@
+{
+    "243": {
+        "1": {
+            "1": {
+                "answers": {
+                    "1": "Joseph Kasavubu"
+                },
+                "correct": "Joseph Kasavubu",
+                "id": 24311,
+                "question": "Who was the first President of DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "1960"
+                },
+                "correct": "1960",
+                "id": 24312,
+                "question": " In which year did DR Congo gain independence ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "2001"
+                },
+                "correct": "2001",
+                "id": 24313,
+                "question": "Since when has Joseph KAbila been the President of DR.Congo?",
+                "valid": true
+            }
+        },
+        "2": {
+            "1": {
+                "answers": {
+                    "1": "Congolese Franc"
+                },
+                "correct": "Congolese Franc",
+                "id": 24321,
+                "question": "What is the currency of DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "cobalt ore"
+                },
+                "correct": "cobalt ore",
+                "id": 24322,
+                "question": "What mineral is produced in large quantities by DR Congo?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "784 US dollars(2013)"
+                },
+                "correct": "784 US dollars(2013)",
+                "id": 24323,
+                "question": "What is the GDP per capita of DR congo ?",
+                "valid": true
+            }
+        },
+        "3": {
+            "1": {
+                "answers": {
+                    "1": "Fimbu"
+                },
+                "correct": "Fimbu",
+                "id": 24331,
+                "question": "What was teh DR Congo national team known for at the just ended 2017 AFCON ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "2009 and 2010"
+                },
+                "correct": "2009 and 2010",
+                "id": 24332,
+                "question": "In what years did TP Mazembe win the CAF Champions league back to back ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Kabuscorp SCP"
+                },
+                "correct": "Kabuscorp SCP",
+                "id": 24333,
+                "question": "What team does Tresor Mputu Mabi play for currently ?",
+                "valid": true
+            }
+        },
+        "4": {
+            "1": {
+                "answers": {
+                    "1": "Emenaya"
+                },
+                "correct": "Emenaya",
+                "id": 24341,
+                "question": "Who sang Nzinzi ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Soukous"
+                },
+                "correct": "Soukous",
+                "id": 24342,
+                "question": "What is the popular name for Congolese music ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Joseph Lutumba"
+                },
+                "correct": "Joseph Lutumba",
+                "id": 24343,
+                "question": "Who composed the DR Congo National anthem ?",
+                "valid": true
+            }
+        },
+        "5": {
+            "1": {
+                "answers": {
+                    "1": "242"
+                },
+                "correct": "242",
+                "id": 24351,
+                "question": "How many languages are spoken in DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Pygmies"
+                },
+                "correct": "Pygmies",
+                "id": 24352,
+                "question": "Which ethnic group are the earliest inhabitants of Congo ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Kingwana"
+                },
+                "correct": "Kingwana",
+                "id": 24353,
+                "question": "What is the DR Congo dialect of Swahili called ?",
+                "valid": true
+            }
+        }
+    },
+    "250": {
+        "1": {
+            "1": {
+                "answers": {
+                    "1": "Paul Kagame"
+                },
+                "correct": "Paul Kagame",
+                "id": 25011,
+                "question": "Who is the President of Rwanda ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Silas Lwakabamba"
+                },
+                "correct": "Silas Lwakabamba",
+                "id": 25012,
+                "question": "Who is the Minister of education of Rwanda?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "JuvA(c)nal Habyarimana"
+                },
+                "correct": "JuvA(c)nal Habyarimana",
+                "id": 25013,
+                "question": "Who was the president of Rwanda in 1994 ?",
+                "valid": true
+            }
+        },
+        "2": {
+            "1": {
+                "answers": {
+                    "1": "Rwandan Franc"
+                },
+                "correct": "Rwandan Franc",
+                "id": 25021,
+                "question": "What is the currency of Rwanda ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Tea"
+                },
+                "correct": "Tea",
+                "id": 25022,
+                "question": "What is the main cash crop of Rwanda ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "638.67 US dollars(2013)"
+                },
+                "correct": "638.67 US dollars(2013)",
+                "id": 25023,
+                "question": "What is the GDP per capita of Rwanda ?",
+                "valid": true
+            }
+        },
+        "3": {
+            "1": {
+                "answers": {
+                    "1": "Amavubi(The wasps)"
+                },
+                "correct": "Amavubi(The wasps)",
+                "id": 25031,
+                "question": "What is the name of the Rwandan soccer team ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "93rd"
+                },
+                "correct": "93rd",
+                "id": 25032,
+                "question": "What is the FIFA ranking of the Rwandan national soccer team ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "1984"
+                },
+                "correct": "1984",
+                "id": 25033,
+                "question": "When is the Rwanda's first appearance at the Olympic games ?",
+                "valid": true
+            }
+        },
+        "4": {
+            "1": {
+                "answers": {
+                    "1": "knowless"
+                },
+                "correct": "knowless",
+                "id": 25041,
+                "question": "Who sang baramushaka ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Jean-Paul Samputu"
+                },
+                "correct": "Jean-Paul Samputu",
+                "id": 25042,
+                "question": "Who won two kora awards in 2003 for \"Most Inspiring\" and \"Best Traditional Artist\" ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Rwanda Nziza"
+                },
+                "correct": "Rwanda Nziza",
+                "id": 25043,
+                "question": "What is the name of the Rwandan national anthem ?",
+                "valid": true
+            }
+        },
+        "5": {
+            "1": {
+                "answers": {
+                    "1": "Itorero"
+                },
+                "correct": "Itorero",
+                "id": 25051,
+                "question": "Name the main traditional Rwandan dance ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Afrobeat"
+                },
+                "correct": "Afrobeat",
+                "id": 25052,
+                "question": "What is the most modern music genre in Rwanda ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Tutsis and Hutus"
+                },
+                "correct": "Tutsis and Hutus",
+                "id": 25053,
+                "question": "What are the two main tribes of Rwanda ?",
+                "valid": true
+            }
+        }
+    }
+}
