@@ -6,12 +6,11 @@ var liComponents;
 var widthOfImage;
 var imageNum;
 /*The init method initializes the images that will be run on the homepage by using their children */
-function int(){
-	ul =document.getElementbyId('slide_image');
+function inti(){
+	ul = document.getElementbyId('slide_image');
 	liComponents=ul.children;
 	imageNum = liComponents.length ;
 	widthOfImage=liComponents[0].children[0].offsetWidth ;
-
 	//Total width of all images in the slider represents the image's ul width
 	ul.style.width = parseInt(widthOfImage*imageNum) + "px" ;
 	slider(ul) ;
@@ -19,7 +18,7 @@ function int(){
 /*This is the main implementaion of the function slider that directs how the images should slide*/
 function slider(ul){
 	animate({
-		delay : 20;
+		delay : 20,
 		duration:3000,
 		delta:function(p){return Math.max(0,-1+2*p)},
 		step:function(delta){
