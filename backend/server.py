@@ -64,12 +64,56 @@ def sendData():
 @app.route('/addteam', methods=['POST'])
 def addteam():
 	if request.method == 'POST':
-		username = request.args.get('name')
 		team = request.args.get('team')
-		#add team code
-		
+		with open("teams.json", "r") as my_file:
+			data = json.load(my_file)
+			data[team] = {}
+		os.remove("teams.json")
+		with open("teams.json", "w") as my_file:
+			json.dump(data, my_file, indent=4)
+		response_data = {"response": "Your team has been saved"}
+		myJson = json.dumps(response_data, sort_keys=True)
+		response = Response(myJson)
+		response.headers.add("Access-Control-Allow-Origin", "*")
+		return response
+@app.route('/savepoints', methods=['GET'])
+def savepoints():
+	if request.method =='GET':
+		team = request.args.get('team')
+		points = request.args.get('points')
+		points = int(points)
+		question = request.args.get('question')
 
+		with open("teams.json", "r") as my_file:
+			data = json.load(my_file)
+			if not question in data[team].keys():
+				data[team][question] = points
+			else:
+				response_data={"response":"Failure: Question already answered"}
+				myJson = json.dumps(response_data, sort_keys=True)
+				response = Response(myJson)
+				return response
+		os.remove("teams.json")
+		with open("teams.json", "w") as my_file:
+			json.dump(data, my_file, indent=4)
+		response_data={"response":"Success: your answer was recorded"}
+		myJson = json.dumps(response_data, sort_keys=True)
+		response = Response(myJson)
+		response.headers.add("Access-Control-Allow-Origin", "*")
+		return response
+@app.route('/statistics')
+def getstats():
+	with open("teams.json", "r") as my_file:
+		data = json.load(my_file)
+	results = {}
+	for team in data.keys():
+		results[team] = 0
+		for question in data[team].keys():
+			point = data[team][question]
+			point  = int(question)
+			results[team] = results[team] + point
+	response = Response(json.dumps(results, sort_keys=True))
+	response.headers.add("Access-Control-Allow-Origin", "*")
+	return response
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5064, debug=True)
-
-
