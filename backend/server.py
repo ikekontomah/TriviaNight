@@ -51,6 +51,8 @@ def sendData():
 							qAnswers = sorted(qLine[qLine.index("?")+1:].split(","))
 
 							qAnswers = list(filter(lambda a: a!= "", qAnswers))
+							myData[countryCode][topic][difficulty]["id"] = int(countryCode)*100 + int(topic) * 10 + int(difficulty)
+							myData[countryCode][topic][difficulty]["valid"] = True
 							myData[countryCode][topic][difficulty]['answers'] = {}
 							for j, answer in enumerate(qAnswers):
 								myData[countryCode][topic][difficulty]['answers'][j+1] = answer.strip()
@@ -58,9 +60,16 @@ def sendData():
 			pass
 	data_file.close()
 	myJson = json.dumps(myData, sort_keys=True, indent=4)
+	with open("data.json", "w") as my_file:
+		my_file.write(myJson)
+
 	response = Response(myJson)
 	response.headers.add('Access-Control-Allow-Origin', '*')
 	return response
+@app.route('/getcountry')
+def sendCountry():
+	countryCode = request.args.get('code')
+
 @app.route('/addteam', methods=['POST'])
 def addteam():
 	if request.method == 'POST':
@@ -82,12 +91,12 @@ def savepoints():
 		team = request.args.get('team')
 		points = request.args.get('points')
 		points = int(points)
-		question = request.args.get('question')
+		questionId = request.args.get('id')
 
 		with open("teams.json", "r") as my_file:
 			data = json.load(my_file)
 			if not question in data[team].keys():
-				data[team][question] = points
+				data[team][questionId] = points
 			else:
 				response_data={"response":"Failure: Question already answered"}
 				myJson = json.dumps(response_data, sort_keys=True)
