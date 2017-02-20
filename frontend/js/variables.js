@@ -147,7 +147,156 @@ const topics = {
 	4: "entertainment",
 	5: "culture"
 };
-
+var data243 = `
+{
+	"243": {
+        "1": {
+            "1": {
+                "answers": {
+                    "1": "Joseph Kasavubu"
+                },
+                "correct": "Joseph Kasavubu",
+                "id": 24311,
+                "question": "Who was the first President of DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "1960"
+                },
+                "correct": "1960",
+                "id": 24312,
+                "question": " In which year did DR Congo gain independence ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "2001"
+                },
+                "correct": "2001",
+                "id": 24313,
+                "question": "Since when has Joseph KAbila been the President of DR.Congo?",
+                "valid": true
+            }
+        },
+        "2": {
+            "1": {
+                "answers": {
+                    "1": "Congolese Franc"
+                },
+                "correct": "Congolese Franc",
+                "id": 24321,
+                "question": "What is the currency of DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "cobalt ore"
+                },
+                "correct": "cobalt ore",
+                "id": 24322,
+                "question": "What mineral is produced in large quantities by DR Congo?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "784 US dollars(2013)"
+                },
+                "correct": "784 US dollars(2013)",
+                "id": 24323,
+                "question": "What is the GDP per capita of DR congo ?",
+                "valid": true
+            }
+        },
+        "3": {
+            "1": {
+                "answers": {
+                    "1": "Fimbu"
+                },
+                "correct": "Fimbu",
+                "id": 24331,
+                "question": "What was teh DR Congo national team known for at the just ended 2017 AFCON ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "2009 and 2010"
+                },
+                "correct": "2009 and 2010",
+                "id": 24332,
+                "question": "In what years did TP Mazembe win the CAF Champions league back to back ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Kabuscorp SCP"
+                },
+                "correct": "Kabuscorp SCP",
+                "id": 24333,
+                "question": "What team does Tresor Mputu Mabi play for currently ?",
+                "valid": true
+            }
+        },
+        "4": {
+            "1": {
+                "answers": {
+                    "1": "Emenaya"
+                },
+                "correct": "Emenaya",
+                "id": 24341,
+                "question": "Who sang Nzinzi ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Soukous"
+                },
+                "correct": "Soukous",
+                "id": 24342,
+                "question": "What is the popular name for Congolese music ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Joseph Lutumba"
+                },
+                "correct": "Joseph Lutumba",
+                "id": 24343,
+                "question": "Who composed the DR Congo National anthem ?",
+                "valid": true
+            }
+        },
+        "5": {
+            "1": {
+                "answers": {
+                    "1": "242"
+                },
+                "correct": "242",
+                "id": 24351,
+                "question": "How many languages are spoken in DR Congo?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
+                    "1": "Pygmies"
+                },
+                "correct": "Pygmies",
+                "id": 24352,
+                "question": "Which ethnic group are the earliest inhabitants of Congo ?",
+                "valid": true
+            },
+            "3": {
+                "answers": {
+                    "1": "Kingwana"
+                },
+                "correct": "Kingwana",
+                "id": 24353,
+                "question": "What is the DR Congo dialect of Swahili called ?",
+                "valid": true
+            }
+        }
+    }
+}`;
 //It's better to have this SVG file here instead of in the html code because that would make it cumbersome on the html file.
 var africaMapSVG = `
 <!-- 
