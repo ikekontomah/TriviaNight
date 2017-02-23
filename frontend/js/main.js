@@ -1,12 +1,13 @@
 var sendToServer = []; //This is the variable that will be sent to the server
 var currentRegion = "";
+var currentTeams;
 $(document).ready(function(){
 	/*
 	Many variables taken from "variables.js", which contain many variables used. It's best for modularity and clarity.
 	*/
 	print("ASA TRIVIA NIGHT", "red; font-size: 20px");
-	// loadStarter();
-	initialize();
+	loadStarter();
+	// initialize();
 });
 function loadStarter(){
 	$("#index-rest-init").fadeTo(10, 0);
@@ -20,6 +21,7 @@ function loadStarter(){
 		$("#ls-signup").addClass("col-xs-6 col-md-6 col-lg-6 col-xs-offset-3 col-md-offset-3 col-lg-offset-3");
 		$("#index-rest-init").fadeTo(1000, 1);
 		$("#ls-signup").click(function(){
+			currentTeams = {};
 			ls_signupClick();
 		})
 	}
@@ -30,7 +32,9 @@ function loadStarter(){
 			async: false,
 			success: function(data){
 				return "WORKING ON IT";
-				var c = setInterval(function(){}, 1000);
+				var c = setInterval(function(){
+					newteamsUpdate();
+				}, 1000);
 			},
 			error: function(xhr, status, error){
 				print("ERROR: "+error, "red");
@@ -43,6 +47,20 @@ function loadStarter(){
 	setTimeout(function(){
 		callback();
 	}, 100);
+}
+function newteamsUpdate(){
+	$.ajax({
+		url: "/newteams",
+		type: "GET",
+		async: false,
+		success: function(data){
+			//this data is the current teams
+			return ""; //CHECK IF DATA IS DIFFERENT
+		},
+		error: function(xhr, status, error){
+			print("ERROR: "+error, "red");
+		}
+	})
 }
 function initialize(){
 	$("#index-rest-init").html('<p>Select a region</p><div id="map"></div>');

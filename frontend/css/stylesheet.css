@@ -50,6 +50,7 @@ body {
   font-size: 3.5rem; }
 
 .loadStarter #ls-signup {
+  top: 10rem;
   background-color: white;
   display: block; }
 
