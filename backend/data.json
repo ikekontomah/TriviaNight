@@ -28,11 +28,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 2013,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -134,11 +134,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 21213,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -281,11 +281,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 21813,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -334,11 +334,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 22013,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -493,11 +493,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 22313,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -652,11 +652,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 22613,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -758,11 +758,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 22813,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -1117,11 +1117,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 23513,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -1276,11 +1276,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 23813,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -1304,50 +1304,50 @@
         "1": {
             "1": {
                 "answers": {
-                    "1": "Hastings Banda",
+                    "1": "Paul Kagame",
                     "2": "Gregoire Kayibanda",
                     "3": "Helen Johnson Sirleaf",
-                    "4": "Paul Kagame"
+                    "4": "Manuel Pinto da Costa"
                 },
-                "correct": "Paul Kagame",
+                "correct": "Manuel Pinto da Costa",
                 "id": 23911,
-                "question": "Who is the President of Rwanda ?",
+                "question": "Who is the President of Sao Tome ?",
                 "valid": true
             },
             "2": {
                 "answers": {
-                    "1": "Francois Kanimba",
-                    "2": "Papias Malimba Musafiri",
-                    "3": "Silas Lwakabamba",
-                    "4": "Olusegun Obasanjo"
+                    "1": "5",
+                    "2": "6",
+                    "3": "7",
+                    "4": "8"
                 },
-                "correct": "Papias Malimba Musafiri",
+                "correct": "5",
                 "id": 23912,
-                "question": "Who is the Minister of education of Rwanda?",
+                "question": "What is the Presidential term in Sao Tome?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
-                    "3": "Mahamoudou Buhari",
-                    "4": "Paul Kagame"
+                    "1": "eagle",
+                    "2": "matchet",
+                    "3": "palm tree",
+                    "4": "star"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "matchet",
                 "id": 23913,
-                "question": "Who was the president of Rwanda in 1994 ?",
+                "question": "Which of these is not found on the coat of arms of Sao Tome?",
                 "valid": true
             },
             "4": {
                 "answers": {
-                    "1": "Nagede",
-                    "2": "Michelle",
-                    "3": "Sonia",
-                    "4": "Wayne"
+                    "1": "15th century",
+                    "2": "16th century",
+                    "3": "18th century",
+                    "4": "20th century"
                 },
-                "correct": "Sonia",
+                "correct": "15th century",
                 "id": 23914,
-                "question": " What name is the most used among females in Rwanda?",
+                "question": "In which century did Portuguese explorers discover Sao Tome ?",
                 "valid": true
             },
             "5": {}
@@ -1382,11 +1382,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 24013,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -1647,11 +1647,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 24513,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -1671,86 +1671,56 @@
             "5": {}
         }
     },
-    "247": {
-        "1": {
-            "1": {
-                "answers": {
-                    "1": "1960",
-                    "2": "1962",
-                    "3": "1964",
-                    "4": "1990"
-                },
-                "correct": "1960",
-                "id": 24711,
-                "question": " In which year did DR Congo gain independence ?",
-                "valid": true
-            },
-            "2": {
-                "answers": {
-                    "1": "2001",
-                    "2": "2003",
-                    "3": "2005",
-                    "4": "2009"
-                },
-                "correct": "2001",
-                "id": 24712,
-                "question": "Since when has Joseph Kabila been the President of DR.Congo?",
-                "valid": true
-            },
-            "3": {
-                "answers": {
-                    "1": "3",
-                    "2": "4",
-                    "3": "5",
-                    "4": "6"
-                },
-                "correct": "3",
-                "id": 24713,
-                "question": "How many coup d'etats has DR Congo had?",
-                "valid": true
-            },
-            "4": {}
-        }
-    },
     "248": {
         "1": {
             "1": {
                 "answers": {
-                    "1": "1960",
-                    "2": "1962",
-                    "3": "1964",
-                    "4": "1990"
+                    "1": "James Mancham",
+                    "2": "James Michel",
+                    "3": "Danny Faure",
+                    "4": "France-Albert Rene"
                 },
-                "correct": "1960",
+                "correct": "Danny Faure",
                 "id": 24811,
-                "question": " In which year did DR Congo gain independence ?",
+                "question": "Who is the president of Seychelles?",
                 "valid": true
             },
             "2": {
                 "answers": {
-                    "1": "2001",
-                    "2": "2003",
-                    "3": "2005",
-                    "4": "2009"
+                    "1": "1976",
+                    "2": "1978",
+                    "3": "1979  1982"
                 },
-                "correct": "2001",
+                "correct": "1976",
                 "id": 24812,
-                "question": "Since when has Joseph Kabila been the President of DR.Congo?",
+                "question": " In which year did Seychelles gain independence ?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "3",
-                    "2": "4",
-                    "3": "5",
-                    "4": "6"
+                    "1": "James Mancham",
+                    "2": "Danny Faure",
+                    "3": "France-Albert Rene",
+                    "4": "James Michel"
                 },
-                "correct": "3",
+                "correct": "James Mancham",
                 "id": 24813,
+                "question": "Who was the first President of Seychelles?",
+                "valid": true
+            },
+            "4": {
+                "answers": {
+                    "1": "1",
+                    "2": "4",
+                    "3": "6",
+                    "4": "8"
+                },
+                "correct": "1",
+                "id": 24814,
                 "question": "How many coup d'etats has DR Congo had?",
                 "valid": true
             },
-            "4": {}
+            "5": {}
         }
     },
     "249": {
@@ -1782,11 +1752,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 24913,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -1810,41 +1780,53 @@
         "1": {
             "1": {
                 "answers": {
+                    "1": "Hastings Banda",
+                    "2": "Gregoire Kayibanda",
+                    "3": "Helen Johnson Sirleaf",
+                    "4": "Paul Kagame"
+                },
+                "correct": "Paul Kagame",
+                "id": 25011,
+                "question": "Who is the President of Rwanda ?",
+                "valid": true
+            },
+            "2": {
+                "answers": {
                     "1": "Francois Kanimba",
                     "2": "Papias Malimba Musafiri",
                     "3": "Silas Lwakabamba",
                     "4": "Olusegun Obasanjo"
                 },
                 "correct": "Papias Malimba Musafiri",
-                "id": 25011,
-                "question": "Who is the Minister of education of Rwanda?",
-                "valid": true
-            },
-            "2": {
-                "answers": {
-                    "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
-                    "3": "Mahamoudou Buhari",
-                    "4": "Paul Kagame"
-                },
-                "correct": "Juvenal Habyarimana",
                 "id": 25012,
-                "question": "Who was the president of Rwanda in 1994 ?",
+                "question": "Who is the Minister of education of Rwanda?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "Nagede",
-                    "2": "Michelle",
-                    "3": "Sonia",
-                    "4": "Wayne"
+                    "1": "Gregoire Kayibanda",
+                    "2": "JuvA(c)nal Habyarimana",
+                    "3": "Mahamoudou Buhari",
+                    "4": "Paul Kagame"
                 },
-                "correct": "Sonia",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 25013,
-                "question": " What name is the most used among females in Rwanda?",
+                "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
             },
-            "4": {}
+            "4": {
+                "answers": {
+                    "1": "branch",
+                    "2": "dove",
+                    "3": "pot of fire",
+                    "4": "sickle"
+                },
+                "correct": "pot of fire",
+                "id": 25014,
+                "question": " Which of these is not found on the Rwandan coat of arms ?",
+                "valid": true
+            },
+            "5": {}
         }
     },
     "251": {
@@ -1892,90 +1874,103 @@
         "1": {
             "1": {
                 "answers": {
-                    "1": "Tea",
-                    "2": "barley  coffee",
-                    "3": "beer"
+                    "1": "Joseph Kasavubu",
+                    "2": "Antoine Kisenga",
+                    "3": "Joseph Kasavubu",
+                    "4": "Mohamed Abdullahi Mohamed"
                 },
-                "correct": "Tea",
+                "correct": "Mohamed Abdullahi Mohamed",
                 "id": 25211,
-                "question": "What is the main cash crop of Rwanda ?",
+                "question": "Who is the President of Somalia?",
                 "valid": true
             },
             "2": {
                 "answers": {
-                    "1": "491.35 US Dollars(2012)",
-                    "2": "504.44 US Dollars(2015)",
-                    "3": "638.67 US dollars(2013)",
-                    "4": "648.56 US Dollars(2015)"
+                    "1": "1960",
+                    "2": "1962",
+                    "3": "1964",
+                    "4": "1990"
                 },
-                "correct": "638.67 US dollars(2013)",
+                "correct": "1960",
                 "id": 25212,
-                "question": "What is the GDP per capita of Rwanda ?",
+                "question": " In which year did Somalia gain independence ?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "802",
-                    "2": "816",
-                    "3": "819",
-                    "4": "840"
+                    "1": "August 1",
+                    "2": "July 1",
+                    "3": "June 1",
+                    "4": "October 1"
                 },
-                "correct": "819",
+                "correct": "July 1",
                 "id": 25213,
-                "question": "How many Rwandan francs equal one dollar?",
+                "question": "What is the independence day of Somalia?",
                 "valid": true
             },
-            "4": {}
+            "4": {
+                "answers": {
+                    "1": "2",
+                    "2": "3",
+                    "3": "4",
+                    "4": "5"
+                },
+                "correct": "2",
+                "id": 25214,
+                "question": "How many coup d'etats has Somalia had?",
+                "valid": true
+            },
+            "5": {}
         }
     },
     "253": {
         "1": {
             "1": {
                 "answers": {
-                    "1": "Hastings Banda",
-                    "2": "Gregoire Kayibanda",
-                    "3": "Helen Johnson Sirleaf",
-                    "4": "Paul Kagame"
+                    "1": "Hassan Shehatta",
+                    "2": "Mahmoudou Diallo",
+                    "3": "Ousmane Alhassan",
+                    "4": "IsmaA-l Omar Guelleh"
                 },
-                "correct": "Paul Kagame",
+                "correct": "IsmaA-l Omar Guelleh",
                 "id": 25311,
-                "question": "Who is the President of Rwanda ?",
+                "question": "Who is the President of Djibouti?",
                 "valid": true
             },
             "2": {
                 "answers": {
-                    "1": "Francois Kanimba",
-                    "2": "Papias Malimba Musafiri",
-                    "3": "Silas Lwakabamba",
-                    "4": "Olusegun Obasanjo"
+                    "1": "Hassan Gouled Aptidon",
+                    "2": "Hassan Shehatta",
+                    "3": "IsmaA-l Omar Guelleh",
+                    "4": "Mahmoudou Diallo"
                 },
-                "correct": "Papias Malimba Musafiri",
+                "correct": "Hassan Gouled Aptidon",
                 "id": 25312,
-                "question": "Who is the Minister of education of Rwanda?",
+                "question": "Who was the first President of Djibouti?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
-                    "3": "Mahamoudou Buhari",
-                    "4": "Paul Kagame"
+                    "1": "eagle",
+                    "2": "shield",
+                    "3": "star",
+                    "4": "sword"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "eagle",
                 "id": 25313,
-                "question": "Who was the president of Rwanda in 1994 ?",
+                "question": "Which of these is not a component of Djibouti's coat of arms?",
                 "valid": true
             },
             "4": {
                 "answers": {
-                    "1": "Nagede",
-                    "2": "Michelle",
-                    "3": "Sonia",
-                    "4": "Wayne"
+                    "1": "July 31",
+                    "2": "June 27",
+                    "3": "June 29",
+                    "4": "June 30"
                 },
-                "correct": "Sonia",
+                "correct": "June 27",
                 "id": 25314,
-                "question": " What name is the most used among females in Rwanda?",
+                "question": " Which of these is Djibouti's independence day ?",
                 "valid": true
             },
             "5": {}
@@ -2026,50 +2021,50 @@
         "1": {
             "1": {
                 "answers": {
-                    "1": "Hastings Banda",
-                    "2": "Gregoire Kayibanda",
-                    "3": "Helen Johnson Sirleaf",
-                    "4": "Paul Kagame"
+                    "1": "Ali Hassan Mwinyi",
+                    "2": "Benjamin Mkapa",
+                    "3": "Elizabeth II",
+                    "4": "John Magafuli"
                 },
-                "correct": "Paul Kagame",
+                "correct": "John Magafuli",
                 "id": 25511,
-                "question": "Who is the President of Rwanda ?",
+                "question": "Who is the President of Tanzania?",
                 "valid": true
             },
             "2": {
                 "answers": {
-                    "1": "Francois Kanimba",
-                    "2": "Papias Malimba Musafiri",
-                    "3": "Silas Lwakabamba",
-                    "4": "Olusegun Obasanjo"
+                    "1": "Dares Salam",
+                    "2": "Dodoma",
+                    "3": "Dorama",
+                    "4": "Pretoria"
                 },
-                "correct": "Papias Malimba Musafiri",
+                "correct": "Dodoma",
                 "id": 25512,
-                "question": "Who is the Minister of education of Rwanda?",
+                "question": "What is the capital of Tanzania?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
-                    "3": "Mahamoudou Buhari",
-                    "4": "Paul Kagame"
+                    "1": "Freedom and Unity",
+                    "2": "Strength and Togetherness",
+                    "3": "Zeal and Unity",
+                    "4": "Togetherness and Unity"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "Freedom and Unity",
                 "id": 25513,
-                "question": "Who was the president of Rwanda in 1994 ?",
+                "question": "What is the motto of Tanzania ?",
                 "valid": true
             },
             "4": {
                 "answers": {
-                    "1": "Nagede",
-                    "2": "Michelle",
-                    "3": "Sonia",
-                    "4": "Wayne"
+                    "1": "axe",
+                    "2": "flaming torch",
+                    "3": "hatchet",
+                    "4": "lion"
                 },
-                "correct": "Sonia",
+                "correct": "lion",
                 "id": 25514,
-                "question": " What name is the most used among females in Rwanda?",
+                "question": " Which of these is not found on the coat of arms of Tanzania ?",
                 "valid": true
             },
             "5": {}
@@ -2079,38 +2074,38 @@
         "1": {
             "1": {
                 "answers": {
-                    "1": "1960",
-                    "2": "1962",
-                    "3": "1964",
-                    "4": "1990"
+                    "1": "1962",
+                    "2": "1965",
+                    "3": "1966",
+                    "4": "1969"
                 },
-                "correct": "1960",
+                "correct": "1962",
                 "id": 25611,
-                "question": " In which year did DR Congo gain independence ?",
+                "question": " In which year did Uganda gain independence ?",
                 "valid": true
             },
             "2": {
                 "answers": {
-                    "1": "2001",
-                    "2": "2003",
-                    "3": "2005",
-                    "4": "2009"
+                    "1": "For god and my country",
+                    "2": "God before everything",
+                    "3": "Strength in the Cranes",
+                    "4": "Uganda above all else"
                 },
-                "correct": "2001",
+                "correct": "For god and my country",
                 "id": 25612,
-                "question": "Since when has Joseph Kabila been the President of DR.Congo?",
+                "question": "What is the motto of Uganda?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "3",
-                    "2": "4",
-                    "3": "5",
-                    "4": "6"
+                    "1": "1971",
+                    "2": "1973",
+                    "3": "1975",
+                    "4": "1978"
                 },
-                "correct": "3",
+                "correct": "1971",
                 "id": 25613,
-                "question": "How many coup d'etats has DR Congo had?",
+                "question": "In which year did Idi Amin Dada take over in a coup d'etat in Uganda ?",
                 "valid": true
             },
             "4": {}
@@ -2173,50 +2168,49 @@
         "1": {
             "1": {
                 "answers": {
-                    "1": "Hastings Banda",
-                    "2": "Gregoire Kayibanda",
-                    "3": "Helen Johnson Sirleaf",
-                    "4": "Paul Kagame"
+                    "1": "Armando Guebuza",
+                    "2": "Filipe Nyusi",
+                    "3": "Joaquim Chissano",
+                    "4": "Samora Machel"
                 },
-                "correct": "Paul Kagame",
+                "correct": "Filipe Nyusi",
                 "id": 25811,
-                "question": "Who is the President of Rwanda ?",
+                "question": "Who is the President of Mozambique ?",
                 "valid": true
             },
             "2": {
                 "answers": {
-                    "1": "Francois Kanimba",
-                    "2": "Papias Malimba Musafiri",
-                    "3": "Silas Lwakabamba",
-                    "4": "Olusegun Obasanjo"
+                    "1": "Accra",
+                    "2": "Conakry",
+                    "3": "Maputo",
+                    "4": "Mombasa"
                 },
-                "correct": "Papias Malimba Musafiri",
+                "correct": "Maputo",
                 "id": 25812,
-                "question": "Who is the Minister of education of Rwanda?",
+                "question": "What is the capital of Mzambique ?",
                 "valid": true
             },
             "3": {
                 "answers": {
-                    "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
-                    "3": "Mahamoudou Buhari",
-                    "4": "Paul Kagame"
+                    "1": "Charles Taylor",
+                    "2": "Ellen Johnson Sirleaf",
+                    "3": "Samora Machel"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "Samora Machel",
                 "id": 25813,
-                "question": "Who was the president of Rwanda in 1994 ?",
+                "question": "Who was the first president of Mozambique ?",
                 "valid": true
             },
             "4": {
                 "answers": {
-                    "1": "Nagede",
-                    "2": "Michelle",
-                    "3": "Sonia",
-                    "4": "Wayne"
+                    "1": "1964",
+                    "2": "1966",
+                    "3": "1968",
+                    "4": "1974"
                 },
-                "correct": "Sonia",
+                "correct": "1964",
                 "id": 25814,
-                "question": " What name is the most used among females in Rwanda?",
+                "question": "In which year  did the Mozambique war of independence start?",
                 "valid": true
             },
             "5": {}
@@ -2251,11 +2245,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 26013,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -2304,11 +2298,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 26113,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -2323,59 +2317,6 @@
                 "correct": "Sonia",
                 "id": 26114,
                 "question": " What name is the most used among females in Rwanda?",
-                "valid": true
-            },
-            "5": {}
-        }
-    },
-    "262": {
-        "1": {
-            "1": {
-                "answers": {
-                    "1": "Antoine Kisenga",
-                    "2": "Idi Amin",
-                    "3": "Joseph Kasavubu",
-                    "4": "Joseph Kasavubu"
-                },
-                "correct": "Joseph Kasavubu",
-                "id": 26211,
-                "question": "Who was the first President of DR Congo?",
-                "valid": true
-            },
-            "2": {
-                "answers": {
-                    "1": "1960",
-                    "2": "1962",
-                    "3": "1964",
-                    "4": "1990"
-                },
-                "correct": "1960",
-                "id": 26212,
-                "question": " In which year did DR Congo gain independence ?",
-                "valid": true
-            },
-            "3": {
-                "answers": {
-                    "1": "2001",
-                    "2": "2003",
-                    "3": "2005",
-                    "4": "2009"
-                },
-                "correct": "2001",
-                "id": 26213,
-                "question": "Since when has Joseph Kabila been the President of DR.Congo?",
-                "valid": true
-            },
-            "4": {
-                "answers": {
-                    "1": "3",
-                    "2": "4",
-                    "3": "5",
-                    "4": "6"
-                },
-                "correct": "3",
-                "id": 26214,
-                "question": "How many coup d'etats has DR Congo had?",
                 "valid": true
             },
             "5": {}
@@ -2410,11 +2351,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 26313,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -2575,7 +2516,7 @@
                 },
                 "correct": "Letsie III of Lesotho",
                 "id": 26613,
-                "question": "Who is th eking of the Lesotho kingdom?",
+                "question": "Who is the king of the Lesotho kingdom?",
                 "valid": true
             },
             "4": {
@@ -2624,7 +2565,7 @@
                     "1": "Gregoire Kayibanda",
                     "2": "Paul Kagame",
                     "3": "Seretse Khama",
-                    "4": "Juvenal Habyarimana"
+                    "4": "JuvA(c)nal Habyarimana"
                 },
                 "correct": "Seretse Khama",
                 "id": 26713,
@@ -2728,11 +2669,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 26913,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -2781,11 +2722,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 2713,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -2803,11 +2744,6 @@
                 "valid": true
             },
             "5": {}
-        }
-    },
-    "290": {
-        "1": {
-            "1": {}
         }
     },
     "291": {
@@ -2839,11 +2775,11 @@
             "3": {
                 "answers": {
                     "1": "Gregoire Kayibanda",
-                    "2": "Juvenal Habyarimana",
+                    "2": "JuvA(c)nal Habyarimana",
                     "3": "Mahamoudou Buhari",
                     "4": "Paul Kagame"
                 },
-                "correct": "Juvenal Habyarimana",
+                "correct": "JuvA(c)nal Habyarimana",
                 "id": 29113,
                 "question": "Who was the president of Rwanda in 1994 ?",
                 "valid": true
@@ -2861,88 +2797,6 @@
                 "valid": true
             },
             "5": {}
-        }
-    },
-    "34": {
-        "1": {
-            "1": {
-                "answers": {
-                    "1": "1960",
-                    "2": "1962",
-                    "3": "1964",
-                    "4": "1990"
-                },
-                "correct": "1960",
-                "id": 3411,
-                "question": " In which year did DR Congo gain independence ?",
-                "valid": true
-            },
-            "2": {
-                "answers": {
-                    "1": "2001",
-                    "2": "2003",
-                    "3": "2005",
-                    "4": "2009"
-                },
-                "correct": "2001",
-                "id": 3412,
-                "question": "Since when has Joseph Kabila been the President of DR.Congo?",
-                "valid": true
-            },
-            "3": {
-                "answers": {
-                    "1": "3",
-                    "2": "4",
-                    "3": "5",
-                    "4": "6"
-                },
-                "correct": "3",
-                "id": 3413,
-                "question": "How many coup d'etats has DR Congo had?",
-                "valid": true
-            },
-            "4": {}
-        }
-    },
-    "351": {
-        "1": {
-            "1": {
-                "answers": {
-                    "1": "1960",
-                    "2": "1962",
-                    "3": "1964",
-                    "4": "1990"
-                },
-                "correct": "1960",
-                "id": 35111,
-                "question": " In which year did DR Congo gain independence ?",
-                "valid": true
-            },
-            "2": {
-                "answers": {
-                    "1": "2001",
-                    "2": "2003",
-                    "3": "2005",
-                    "4": "2009"
-                },
-                "correct": "2001",
-                "id": 35112,
-                "question": "Since when has Joseph Kabila been the President of DR.Congo?",
-                "valid": true
-            },
-            "3": {
-                "answers": {
-                    "1": "3",
-                    "2": "4",
-                    "3": "5",
-                    "4": "6"
-                },
-                "correct": "3",
-                "id": 35113,
-                "question": "How many coup d'etats has DR Congo had?",
-                "valid": true
-            },
-            "4": {}
         }
     }
 }
