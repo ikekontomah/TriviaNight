@@ -86,7 +86,9 @@ def setQuestion():
 		with open("current.json", "r") as my_file:
 			data = json.load(my_file)
 		data["id"] = request.args.get('id')
-		data["team"] = request.args.get('team')
+		data["team"] = "mit"
+		#data["team"] = request.args.get('team')
+
 
 		questionId = int(data["id"])
 		difficulty = questionId % 10
