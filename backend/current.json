@@ -1,7 +1,6 @@
 {
-	"id":"25011",
-	"answers":{
-		"mit":"5",
-		"wellesley":"3"
-	}
+    "id": "25011",
+    "answer": "8",
+    "correct": "2",
+    "team": "wellesley"
 }
