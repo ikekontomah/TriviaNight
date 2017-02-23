@@ -4,9 +4,46 @@ $(document).ready(function(){
 	/*
 	Many variables taken from "variables.js", which contain many variables used. It's best for modularity and clarity.
 	*/
-	console.log("%cASA TRIVIA NIGHT","font-weight: bold; font-size: 1.5rem;");
+	print("ASA TRIVIA NIGHT", "red; font-size: 20px");
+	// loadStarter();
 	initialize();
 });
+function loadStarter(){
+	$("#index-rest-init").fadeTo(10, 0);
+	function callback(){ //Fake callback lol
+		var html = `
+		<div class="loadStarter container">
+			<div id="ls-signup">Start a new game</div>
+		</div>
+		`;
+		$("#index-rest-init").html(html);
+		$("#ls-signup").addClass("col-xs-6 col-md-6 col-lg-6 col-xs-offset-3 col-md-offset-3 col-lg-offset-3");
+		$("#index-rest-init").fadeTo(1000, 1);
+		$("#ls-signup").click(function(){
+			ls_signupClick();
+		})
+	}
+	function ls_signupClick(){
+		$.ajax({
+			url: "/newgame",
+			type: "POST",
+			async: false,
+			success: function(data){
+				return "WORKING ON IT";
+				var c = setInterval(function(){}, 1000);
+			},
+			error: function(xhr, status, error){
+				print("ERROR: "+error, "red");
+			}
+		});
+		$("#ls-signup").removeAttr("class");
+		$("#ls-signup").attr("id","ls-teams");
+		$("#ls-teams").html("");
+	}
+	setTimeout(function(){
+		callback();
+	}, 100);
+}
 function initialize(){
 	$("#index-rest-init").html('<p>Select a region</p><div id="map"></div>');
 	$("#map").html(africaMapSVG);
@@ -48,6 +85,11 @@ function initialize(){
 		var region = codeToRegion[code];
 		currentRegion = region;
 		sendToServer[0] = selectRandomCountry(region)[0];
+		// + + + + + + + JUST FOR NOW
+		var countryNow = [250,243,267,266,258,255,248,256,253,254,239,252];
+		c = Math.round(Math.random()*countryNow.length);
+		sendToServer[0] = countryNow[c];
+		// + + + + + + +
 		var next;
 		$.ajax({
 			url: "/getcountry",
@@ -121,12 +163,11 @@ function selectDifficulty(country, next){
 	}, 500);
 }
 function displayQuestion(next){
-	next = data243; //JUST FOR PRACTICE
+	// next = data243; //JUST FOR PRACTICE
 	next = JSON.parse(next);
 	var i0 = sendToServer[0].toString(), i1 = sendToServer[1].toString(), i2 = sendToServer[2].toString();
-	var i0 = "243"; //JUST FOR PRACTICE
+	// var i0 = "243"; //JUST FOR PRACTICE
 	question = next[i0][i1][i2];
-	
 	//next is being carried over
 	$("#index-rest-init").fadeTo("fast", 0);
 	setTimeout(function(){

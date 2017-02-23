@@ -147,6 +147,18 @@ const topics = {
 	4: "entertainment",
 	5: "culture"
 };
+function color(argument){
+	switch (argument){
+		case "blueRight":
+		return "rgba(117,225,255,1)";
+		case "yellow":
+		return "rgba(251,247,45,1)";
+		case "orange":
+		return "rgba(255,140,5,1)";
+		case "green":
+		return "rgba(33,230,59,1)";
+	}
+}
 var blueRight = "rgba(117,225,255,1)";
 var redWrong = "rgba(255,84,76,1)";
 var data243 = `

@@ -43,6 +43,24 @@ body {
 	width: 100%;
 	align-self: center;
 }
+.loadStarter {
+	font-size: 3.5rem;
+}
+.loadStarter #ls-signup {
+	background-color: white;
+	display: block;
+}
+.loadStarter #ls-signup:hover {
+	background-color: black;
+	color: white;
+	display: block;
+}
+.loadStarter #ls-teams {
+	background-color: black;
+	min-height: 10rem;
+	color: white;
+	display: block;
+}
 #map {
 	width: 100%;
 }
