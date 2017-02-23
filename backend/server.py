@@ -4,7 +4,6 @@ import json
 from unidecode import unidecode
 
 app = Flask(__name__)
-@app.route("/")
 @app.route('/')
 def respond():
 	return send_file("../frontend/login.html")
