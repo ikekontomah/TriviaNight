@@ -1,6 +1,6 @@
 var sendToServer = []; //This is the variable that will be sent to the server
 var currentRegion = "";
-var currentTeams;
+var currentTeams, teamNow;
 $(document).ready(function(){
 	/*
 	Many variables taken from "variables.js", which contain many variables used. It's best for modularity and clarity.
@@ -113,7 +113,7 @@ function initialize(){
 			url: "/getcountry",
 			type: "GET",
 			async: false,
-			data: {code: sendToServer[0]},
+			data: {"code": sendToServer[0]},
 			success: function(data){
 				print("SUCCESS", "green");
 				next = data;
@@ -166,7 +166,7 @@ function selectDifficulty(country, next){
 			$.ajax({
 				url: "/setquestion",
 				type: "POST",
-				data: {id: sendToServer.join().replace(/,/g,"")},
+				data: {"id": sendToServer.join().replace(/,/g,""), "team": teamNow},
 				async: false,
 				success: function(data){
 					print(data, "green");

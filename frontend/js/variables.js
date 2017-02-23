@@ -19,9 +19,9 @@ const info = {
  		261:"Madagascar",
  		265:"Malawi",
  		230:"Mauritius",
- 		262:"Mayotte",
+ 		// 262:"Mayotte",
  		258:"Mozambique",
- 		262:"Réunion",
+ 		// 262:"Réunion",
  		250:"Rwanda",
  		248:"Seychelles",
  		255:"Tanzania",
@@ -29,21 +29,21 @@ const info = {
  		253:"Djibouti",
  		291:"Eritrea",
  		251:"Ethiopia",
- 		252:"Somalia",
+ 		252:"Somalia"
 	},
 	north: {
 		213:"Algeria",
 		20:"Egypt",
 		218:"Libya",
 		212:"Morocco",
-		211:"South Sudan",
+		// 211:"South Sudan",
 		249:"Sudan",
-		216:"Tunisia",
-		34:"Canary Islands",
-		351:"Madeira",
+		216:"Tunisia"
+		// 34:"Canary Islands",
+		// 351:"Madeira",
 	},
 	west: {
-		247:"Ascension Island",
+		// 247:"Ascension Island",
 		229:"Benin",
 		226:"Burkina Faso",
 		238:"Cape Verde",
@@ -57,11 +57,11 @@ const info = {
 		222:"Mauritania",
 		227:"Niger",
 		234:"Nigeria",
-		290:"Saint Helena",
+		// 290:"Saint Helena",
 		221:"Senegal",
 		232:"Sierra Leone",
-		228:"Togo",
-		290:"Tristan da Cunha"
+		228:"Togo"
+		// 290:"Tristan da Cunha"
 	},
 	central: {
 		244: "Angola",
