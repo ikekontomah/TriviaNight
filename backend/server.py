@@ -4,6 +4,7 @@ import json
 from unidecode import unidecode
 
 app = Flask(__name__)
+@app.route("/")
 @app.route('/')
 def respond():
 	return send_file("../frontend/login.html")
@@ -79,13 +80,15 @@ def sendCountry():
 	response = Response(myJson)
 	response.headers.add('Access-Control-Allow-Origin', '*')
 	return response
-@app.route('/setquestion', methods=['GET'])
+@app.route('/setquestion', methods=['POST'])
 def setQuestion():
-	if request.method == 'GET':
+	if request.method == 'POST':
 		with open("current.json", "r") as my_file:
 			data = json.load(my_file)
 		data["id"] = request.args.get('id')
-		data["team"] = request.args.get('team')
+		data["team"] = "mit"
+		#data["team"] = request.args.get('team')
+
 
 		questionId = int(data["id"])
 		difficulty = questionId % 10
