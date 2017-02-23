@@ -13,7 +13,7 @@ $(document).ready(function(){
 		if (proceed){
 			var current = $("#enter-team").html();
 			current = current.replace(errorMessage,"");
-			current = current.replace(`<p class="error-message" style="color: red;">please enter a valid username and team name</p>`,"")
+			current = current.replace(`<p class="error-message" style="color: red;">please enter a valid username and team name</p>`,"");
 			$("#enter-team").html(current);
 			console.log("%cWORK IN PROGRESS","color: red; font-size: 1.5rem;");
 			console.log(username, teamname);
